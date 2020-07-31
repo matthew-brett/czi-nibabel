@@ -25,7 +25,8 @@ portal](https://apply.chanzuckerberg.com/sub/19208104).
   input / output and combination spatial transforms, including standardization
   of file formats (see HDF5 below) (Oscar E)
 * HDF5 serialization for all image formats (Chris M)
-* New tractography file standard - see
+* New tractography file standard - see [nibabel
+  issue](https://github.com/nipy/nibabel/issues/943)
 * Improved memory performance for image iteration (suggestion by Gaël V).
 * Performant desktop and web image visualization, investigate
   [vispy](http://vispy.org/) and [napari](https://napari.org).
