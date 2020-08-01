@@ -73,6 +73,7 @@ ax.set_ylabel('cumulative commits')
 ax.set_xlabel('commiter #')
 ax.set_title("{} unique contributors from 2013-01-01 ".
              format(max(commiter_number)-1));
+plt.savefig('cumulative_commits.png')
 ```
 
 Next plot the number of commits and number of committers per week:
@@ -104,4 +105,5 @@ fig, (ax1, ax2) = plt.subplots(2, 1, sharex=True)
 by_window_binner(ax1, ax2, commits, start, stop, 365 / 12 * 24*60*60, 'month')
 ax1.set_xlim((dt.datetime(2013, 1, 1), dt.datetime(2020, 8, 1)))
 fig.autofmt_xdate()
+plt.savefig('commits_per_month.png')
 ```
