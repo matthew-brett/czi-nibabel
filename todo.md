@@ -13,7 +13,6 @@ That organization has to sign [the form](./Inst_Approval_Form_Sept_2019.pdf).
 ## Proposal
 
 > Limit to one sentence, maximum of 255 characters.
-> `g
 
 ** Fill in here. Check with `g CTRL-g` in Vim, or by copying into relevant box
 on page.**
