@@ -42,7 +42,7 @@ Abstract ... TBC
 > activities (e.g., sprints, training), specify how these activities will be
 > organized, the target audience, and expected outcomes (maximum of 750 words).
 
-The work plan ... TBC
+See `./work_plan.md`.
 
 ### Milestones and Deliverables (required):
 
@@ -51,7 +51,7 @@ The work plan ... TBC
 > project(s) are expected to reach upon completion of the grant (maximum of 500
 > words)
 
-Milestones ... TBC
+See `./milestones.md`.
 
 ### Existing Support (required):
 
@@ -60,7 +60,7 @@ Milestones ... TBC
 > in this section any previous funding for these software projects received
 > from CZI (maximum of 250 words)
 
-Existing support ... TBC
+None
 
 ### Landscape Analysis (required):
 
