@@ -106,7 +106,7 @@ the proportion has been much lower over Nibabel's full commit history, at 3.4%.
 >   narrative or tabular form, outlining costs for personnel (including names,
 >   if known), supplies, equipment, travel, meetings/hackathons/sprints,
 >   subcontracts, other costs, and up to 15% indirect costs (excluding
->   equipment and subcontracts). 
+>   equipment and subcontracts).
 >
 > * Indirect costs are limited to up to 15% of direct costs and are included
 >   within the annual budget total. Indirect costs may not be assessed on
@@ -132,6 +132,26 @@ Nibabel is a base library written in pure Python for working with a wide variety
 
 We also use Nibabel as the most basic layer of interaction with brain images, in our own work, and in teaching.  Nibabel presents an object-oriented interface to brain images, giving efficient Python access to the brain image data in the form of a Numpy array, and metadata in the form of a Python dictionary or Numpy record array.  These attributes make it relatively straightforward to build custom image processing pipelines, that filter, threshold, combine or display images.
 
-### Software metrics
+## Software metrics
 
 
+### List of upstream, downstream, or related software projects that the team is contributing to or receiving contributions from:
+
+Matthew Brett contributions (number of commits):
+
+Upstream
+  numpy
+  scipy
+  statsmodels
+  cython
+
+### Additional metrics from project code repositories and package managers:
+
+> Provide a short description of any considerations or caveats we should be
+> aware of when computing metrics (e.g. a recent change in the name or hosting
+> of the repository), or any additional information you would like to share
+> about the project’s impact and quality. (maximum of 500 words)
+
+We have been early adopters to formal software process.  We started using Git in 2007 and Github in 2010.  We required code review from 2010.  We used Buildbot for CI from 2011, Travis-CI from 2012, Appveyor from 2014, and Azure Pipelines from July 2019.
+
+Our code coverage is 91.8%; we check on each proposed merge commit with CodeCov.
