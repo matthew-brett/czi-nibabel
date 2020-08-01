@@ -22,9 +22,9 @@ Strengthen the social and code foundations of the Nibabel library by outreach th
 ### Amount Requested (required):
 
 > Enter total budget amount requested in USD, including indirect costs; this
-> number should be between $50k and $250k total costs and match total described
-> in the Budget Description. Enter whole numbers only (no dollar signs, commas,
-> or cents)
+> number should be between \$50k and \$250k total costs and match total
+> described in the Budget Description. Enter whole numbers only (no dollar
+> signs, commas, or cents)
 
 0
 
@@ -90,6 +90,8 @@ the proportion has been much lower over Nibabel's full commit history, at 3.4%.
 > include figures, charts and tables, references for the proposal, or any
 > additional material in support of the proposal (maximum of three pages)
 
+See `./optional_attachments.md`.
+
 ## CV of applicant
 
 > Upload in PDF format; include current and recent employment, education
@@ -127,12 +129,11 @@ the proportion has been much lower over Nibabel's full commit history, at 3.4%.
 
 ### Short description of software project (200 words maximum) (required)
 
-Nibabel is a base library written in pure Python for working with a wide variety of brain imaging data formats as Numpy arrays.  We designed it to work two related roles: a Python workbench for researchers working with brain images, and a foundation upon which higher level libraries can build.  It is a dependency for nearly every Python library for brain imaging, including Nilearn and PyMVPA (machine learning), NiPy (functional brain imaging), DiPy (diffusion imaging) MNE (EEG and MEG analysis), PySurfer (brain surface display), Nipype (analysis pipelines), DeepMedic and NiftyNet (neural network analysis of brain images). A total of 45 PyPI packages depend on Nibabel: https://libraries.io/pypi/nibabel/dependents
+Nibabel is a base library written in pure Python for working with a wide variety of brain imaging data formats as Numpy arrays.  We designed it to work two related roles: a Python workbench for researchers working with brain images, and a foundation upon which higher level libraries can build.  It is a dependency for nearly every Python library for brain imaging, including Nilearn and PyMVPA (machine learning), NiPy (functional brain imaging), DiPy (diffusion imaging) MNE (EEG and MEG analysis), PySurfer (brain surfce display), Nipype (analysis pipelines), DeepMedic and NiftyNet (neural network analysis of brain images). A total of 45 PyPI packages depend on Nibabel: https://libraries.io/pypi/nibabel/dependents
 
 We also use Nibabel as the most basic layer of interaction with brain images, in our own work, and in teaching.  Nibabel presents an object-oriented interface to brain images, giving efficient Python access to the brain image data in the form of a Numpy array, and metadata in the form of a Python dictionary or Numpy record array.  These attributes make it relatively straightforward to build custom image processing pipelines, that filter, threshold, combine or display images.
 
 ## Software metrics
-
 
 ### List of upstream, downstream, or related software projects that the team is contributing to or receiving contributions from:
 
