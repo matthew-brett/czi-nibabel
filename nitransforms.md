@@ -15,7 +15,7 @@ Spatial transforms formalize mappings between coordinates of objects in biomedic
 
 As you will see, the paper itself attempted to be very educational. There we describe clearly what's the problem, why there's no other package like NiTransforms and why we see it as a module within NiBabel in the long run.
 
-In the remaining of the document, I'll copy and paste what I can scratch out from previous CZI calls and other grants.
+In the remaining of the document, I'll copy and paste what I can scratch out from previous CZI calls and other grants. Mentions to BIDS-Derivatives, X5 format, etc can be removed or at least toned down so that it is not the focus.
 
 ---
 
