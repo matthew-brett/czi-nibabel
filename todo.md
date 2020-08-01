@@ -139,11 +139,23 @@ We also use Nibabel as the most basic layer of interaction with brain images, in
 
 Matthew Brett contributions (number of commits):
 
-Upstream
-  numpy
-  scipy
-  statsmodels
-  cython
+Upstream:
+    Numpy : 94
+    Scipy : 281
+    Statsmodels : 59
+    Matplotlib : 56
+
+Downstream:
+    Nipy : 1657
+    Dipy : 564
+
+Downstream contributions back (number of commits, ):
+    Dipy : 185
+    FSL : 108
+    PyMVPA : 87
+    Nipype : 65
+    dcmstack : 22
+    MNE : 15
 
 ### Additional metrics from project code repositories and package managers:
 
