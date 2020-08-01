@@ -81,7 +81,8 @@ Landscape ... TBC
 > with respect to their contributors and audience. Please see examples from
 > successful first cycle applications (maximum of 250 words) 
 
-Our current EDI efforts.
+In the last year, 18% of Nibabel's commits were from female programmers, but
+the proportion has been much lower over Nibabel's full commit history, at 3.4%.
 
 ## Optional attachments
 
@@ -127,7 +128,9 @@ Our current EDI efforts.
 
 ### Short description of software project (200 words maximum) (required)
 
-Nibabel is a base library for working with brain imaging data formats.  
+Nibabel is a base library written in pure Python for working with a wide variety of brain imaging data formats as Numpy arrays.  We designed it to work two related roles: a Python workbench for researchers working with brain images, and a foundation upon which higher level libraries can build.  It is a dependency for nearly every Python library for brain imaging, including Nilearn and PyMVPA (machine learning), NiPy (functional brain imaging), DiPy (diffusion imaging) MNE (EEG and MEG analysis), PySurfer (brain surface display), Nipype (analysis pipelines), DeepMedic and NiftyNet (neural network analysis of brain images). A total of 45 PyPI packages depend on Nibabel: https://libraries.io/pypi/nibabel/dependents
+
+We also use Nibabel as the most basic layer of interaction with brain images, in our own work, and in teaching.  Nibabel presents an object-oriented interface to brain images, giving efficient Python access to the brain image data in the form of a Numpy array, and metadata in the form of a Python dictionary or Numpy record array.  These attributes make it relatively straightforward to build custom image processing pipelines, that filter, threshold, combine or display images.
 
 ### Software metrics
 
