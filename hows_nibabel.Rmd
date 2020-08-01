@@ -1,0 +1,107 @@
+---
+jupyter:
+  celltoolbar: Edit Metadata
+  jupytext:
+    metadata_filter:
+      notebook:
+        additional: all
+        excluded:
+        - language_info
+    split_at_heading: true
+    text_representation:
+      extension: .Rmd
+      format_name: rmarkdown
+      format_version: '1.0'
+      jupytext_version: 0.8.6
+  kernelspec:
+    display_name: Python 3
+    language: python
+    name: python3
+---
+
+## Health of the Nibabel repository
+
+First I looked at the code repository.
+
+```{python echo=FALSE}
+from collections import Counter
+import datetime as dt
+import itertools
+
+import numpy as np
+
+# %matplotlib inline
+import matplotlib.pyplot as plt
+import pandas as pd
+```
+
+I used some [code to analyze commit history](https://gist.github.com/tacaswell/e95cb2d57ca3783ffc40) kindly posted by Thomas Caswell.
+
+Following Thomas' recipe, I first took a local clone of the [Julia Language repository](https://github.com/JuliaLang/julia).
+
+I continued the recipe by using Git on the local clone to extract author + commit date from the Git version control repository from January 1 2013 till now.
+
+```
+echo 'time&name' > nibabel_commits.csv
+git log --no-merges --since=2010-01-01 --pretty=format:'%at&%aN <%aE>' >> nibabel_commits.csv
+```
+
+```{python echo=FALSE}
+commits = pd.read_csv('nibabel_commits.csv', sep='&')
+```
+
+The first piece of code shows the cumulative plot of the number of
+commits, by committer number, where the committer numbers give the order or
+each committer in terms of number of commits.  Committers with more commits
+have lower committer numbers. The plot shows that a few committers have made
+the large majority of commits, but there is a reasonably large number of
+contributors.
+
+```{python echo=FALSE}
+commiters = Counter(commits['name'])
+commiter_number = list(range(len(commiters) + 1))
+c_count = list(commiters.values())
+cum_commits = np.r_[[0], np.cumsum(sorted(c_count, reverse=True))]
+
+fig, ax = plt.subplots()
+ax.step(commiter_number, cum_commits, where='post', color='k', lw=5)
+ax.tick_params(axis='y', direction='out')
+ax.tick_params(axis='x', direction='out')
+ax.set_xlim([0, max(commiter_number)])
+ax.set_ylim([0, np.sum(c_count)])
+ax.set_ylabel('cumulative commits')
+ax.set_xlabel('commiter #')
+ax.set_title("{} unique contributors from 2013-01-01 ".
+             format(max(commiter_number)-1));
+```
+
+Next plot the number of commits and number of committers per week:
+
+```{python echo=FALSE}
+def stats_plotter(ax, left_edges, unq_by_week, col, ylabel):
+    ln, = ax.step(left_edges,
+                  unq_by_week[col], color='k', where='post', lw=2)
+
+    hln = ax.axhline(unq_by_week[col].mean(), color='forestgreen', zorder=0, lw=2)
+    ax.set_ylabel(ylabel)
+    return ln, hln
+
+
+def by_window_binner(ax1, ax2, commits, start, stop, step, window_name):
+    edges = np.arange(start, stop + step, step)
+    left_edges = [dt.datetime.fromtimestamp(t) for t in edges[:-1]]
+
+    gb = commits.groupby(pd.cut(commits['time'], edges))
+    unq_by_bin = gb.agg(lambda x: len(set(x)))
+
+    stats_plotter(ax1, left_edges, unq_by_bin, 'time', 'commits per {}'.format(window_name))
+    stats_plotter(ax2, left_edges, unq_by_bin, 'name', 'committers per {}'.format(window_name))
+
+start = dt.datetime(2010, 1, 1).timestamp()
+stop  = dt.datetime.now().timestamp()
+
+fig, (ax1, ax2) = plt.subplots(2, 1, sharex=True)
+by_window_binner(ax1, ax2, commits, start, stop, 365 / 12 * 24*60*60, 'month')
+ax1.set_xlim((dt.datetime(2013, 1, 1), dt.datetime(2020, 8, 1)))
+fig.autofmt_xdate()
+```
