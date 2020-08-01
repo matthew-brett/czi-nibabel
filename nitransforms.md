@@ -58,18 +58,18 @@ home key of Neuroimaging.
 #### Aim 3. Extension of NiBabel for spatial transforms
 We address one void area in the compatibility between neuroimaging tools and formats, extending NiBabel's API. [GitHub issues can be found replacing XX with the issue # in the URL - https://github.com/poldracklab/nitransforms/issues/XX]
 
-CO3.1. Submission to Journal of Open Source Software [[nitransforms#44](https://github.com/poldracklab/nitransforms#44), month 1].
+CO3.1. Submission to Journal of Open Source Software [[nitransforms#44](https://github.com/poldracklab/nitransforms/issues/44), month 1].
 
-SD3.2. Support for ITK's HDF5-format transforms [[nitransforms#4](https://github.com/poldracklab/nitransforms#4), month 1]
+SD3.2. Support for ITK's HDF5-format transforms [[nitransforms#4](https://github.com/poldracklab/nitransforms/issues/4), month 1]
 
-SD3.3. Implement transforms mappings [[nitransforms#46](https://github.com/poldracklab/nitransforms#46), month 2]
+SD3.3. Implement transforms mappings [[nitransforms#46](https://github.com/poldracklab/nitransforms/issues/46), month 2]
 
-SD3.4. Revise unit tests [[nitransforms#37](https://github.com/poldracklab/nitransforms#37), [nitransforms#40](https://github.com/poldracklab/nitransforms#40), [nitransforms#52](https://github.com/poldracklab/nitransforms#52), month 3].
+SD3.4. Revise unit tests [[nitransforms#37](https://github.com/poldracklab/nitransforms/issues/37), [nitransforms#40](https://github.com/poldracklab/nitransforms/issues/40), [nitransforms#52](https://github.com/poldracklab/nitransforms/issues/52), month 3].
 
-SD3.5. Generate API documentation [[nitransforms#58](https://github.com/poldracklab/nitransforms#58), month 3].
+SD3.5. Generate API documentation [[nitransforms#58](https://github.com/poldracklab/nitransforms/issues/58), month 3].
 
-SD3.6. Implement the inversion of nonlinear, nonparametric transforms [[nitransforms#56](https://github.com/poldracklab/nitransforms#56), months 3-5]
+SD3.6. Implement the inversion of nonlinear, nonparametric transforms [[nitransforms#56](https://github.com/poldracklab/nitransforms/issues/56), months 3-5]
 
-SD3.7. Support for nonparametric transforms of surfaces [[nitransforms#57](https://github.com/poldracklab/nitransforms#57), months 5-12].
+SD3.7. Support for nonparametric transforms of surfaces [[nitransforms#57](https://github.com/poldracklab/nitransforms/issues/57), months 5-12].
 
 SD3.8. Integration into NiBabel [month 12].
