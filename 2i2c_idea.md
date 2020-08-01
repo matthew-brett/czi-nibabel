@@ -1,4 +1,4 @@
-#2i2c pitch
+# 2i2c pitch
 
 ## Summary
 
