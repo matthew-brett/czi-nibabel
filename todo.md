@@ -148,6 +148,20 @@ Upstream:
 Downstream:
     Nipy : 1657
     Dipy : 564
+    
+Oscar Esteban contributions (number of commits):
+
+Downstream:
+    fMRIPrep: 1611
+    dMRIPrep: 144
+    sMRIPrep: 305
+    NiWorkflows: 773
+    SDCflows: 798
+    Nipype: 1473
+    MRIQC: 1708
+    NiTransforms: 106
+    Nilearn: 12
+    ICA-AROMA: 1
 
 Downstream contributions back (number of commits, ):
     Dipy : 185
