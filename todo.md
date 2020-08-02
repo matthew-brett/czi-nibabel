@@ -159,8 +159,11 @@ Downstream:
     SDCflows: 798
     Nipype: 1473
     MRIQC: 1708
+    QAP: 169
     NiTransforms: 106
     Nilearn: 12
+    Phantomas: 28
+    DIPY: 3
     ICA-AROMA: 1
 
 Downstream contributions back (number of commits, ):
