@@ -154,8 +154,10 @@ Downstream contributions back (number of commits, ):
     FSL : 108
     PyMVPA : 87
     Nipype : 65
+    MichielCottaar/cifti : 60
     dcmstack : 22
     MNE : 15
+    PySurfer : 13
 
 ### Additional metrics from project code repositories and package managers:
 
