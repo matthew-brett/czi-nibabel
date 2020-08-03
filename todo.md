@@ -193,6 +193,27 @@ Downstream:
     DIPY: 3
     ICA-AROMA: 1
 
+
+Chris Markiewicz's contributions (number of commits):
+
+Upstream:
+    indexed_gzip: 7
+    FreeSurfer (do we consider that upstream?): 5
+    Numpy: 4
+
+Downstream:
+    fMRIPrep: 1010
+    Nipype: 852
+    FitLins: 499
+    Niworkflows: 290
+    PyBIDS: 230
+    Nilearn/Nistats: 36
+    Quickshear: 31
+    MRIQC: 24
+    PySurfer: 10
+    PyMVPA: 8
+
+
 Downstream contributions back (number of commits, ):
     Dipy : 185
     FSL : 108
