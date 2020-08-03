@@ -83,6 +83,12 @@ Landscape ... TBC
 In the last year, 18% of Nibabel's commits were from female programmers, but
 the proportion has been much lower over Nibabel's full commit history, at 3.4%.
 
+nf-core and Nextflow contributors and maintainers openly subscribe to and promote the Contributor Covenant Code of Conduct, which is displayed in our respective websites and GitHub repositories.
+As a community, we strive to promote and encourage diversity and inclusiveness. Event organisers have made and continue to make an active effort to encourage, invite and economically support speakers and participants from under-represented groups. We are proposing to include 10 bursaries to speakers and participants from under-represented groups for the Nextflow conference in 2020 and produce four training events to scientists in economically disadvantaged locations. Future nf-core events will be held in new countries where possible, to further spread the community in to improve community inclusiveness. Use of distributed online platforms such as GitHub, Gitter and Slack allows anyone to join the Nextflow and nf-core communities for free.
+As a technology, Nextflow continues to be pivotal in democratising high-throughput computing in life sciences. By simplifying cloud deployment according to FAIR and open source values, Nextfow provides a means for the marginalised and disadvantaged to access computational resources that were previously the domain of the privileged few.
+Through the PHIND Access program we are providing Nextflow training and researcher exchanges in Tunisia. Using Nextflow, bioinformaticians in North Africa can deploy pathogen identification workflows in the cloud and perform analyses which were previously not possible in a country with a limited science budget.
+
+
 ## Optional attachments
 
 > Upload in PDF format; attachments should be uploaded in a combined single
