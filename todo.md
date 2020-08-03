@@ -80,14 +80,35 @@ Landscape ... TBC
 > with respect to their contributors and audience. Please see examples from
 > successful first cycle applications (maximum of 250 words) 
 
-In the last year, 18% of Nibabel's commits were from female programmers, but
-the proportion has been much lower over Nibabel's full commit history, at 3.4%.
+<!---
+Chris - remind me how you recruited Dorota Jarecka and Hao-Ting Wang?
+-->
 
-nf-core and Nextflow contributors and maintainers openly subscribe to and promote the Contributor Covenant Code of Conduct, which is displayed in our respective websites and GitHub repositories.
-As a community, we strive to promote and encourage diversity and inclusiveness. Event organisers have made and continue to make an active effort to encourage, invite and economically support speakers and participants from under-represented groups. We are proposing to include 10 bursaries to speakers and participants from under-represented groups for the Nextflow conference in 2020 and produce four training events to scientists in economically disadvantaged locations. Future nf-core events will be held in new countries where possible, to further spread the community in to improve community inclusiveness. Use of distributed online platforms such as GitHub, Gitter and Slack allows anyone to join the Nextflow and nf-core communities for free.
-As a technology, Nextflow continues to be pivotal in democratising high-throughput computing in life sciences. By simplifying cloud deployment according to FAIR and open source values, Nextfow provides a means for the marginalised and disadvantaged to access computational resources that were previously the domain of the privileged few.
-Through the PHIND Access program we are providing Nextflow training and researcher exchanges in Tunisia. Using Nextflow, bioinformaticians in North Africa can deploy pathogen identification workflows in the cloud and perform analyses which were previously not possible in a country with a limited science budget.
+A major motivation for our project has been to democratize coding in
+neuroimaging.  The dominant package for coding in neuroimaging is `SPM`,
+written in Matlab.  Python allows a wider range of scientists to use and
+extend our work. Unlike other major software in neuroimaging, we made a strong
+policy of establishing common ownership, rather than associating our code with
+a particular institution.
 
+We are well aware of the lack of diversity in contributors to Nibabel.  The
+gender ratio of students in neuroscience is fairly evenly balanced, but only
+3.4% of our commits are from authors we know to identify as female.  We have
+made progress; in the last year, female developers contributed 18% of Nibabel's
+commits.
+
+Lack of diversity is self-perpetuating.  Despite our best intentions, the
+homogeneous backgrounds of the main contributors will make us less likely to
+question our assumptions about the way we work and communicate.  This is not
+fair, but also, as in biology, monoculture is a risk to the ecosystem.
+
+We want to do much more, and help others to do the same.  A large part of our
+proposal is for educational outreach, using the OpenEdX platform.  We can
+recruit from diverse groups by offering scholarships in the form of paid
+certificates, weighted for students outside our dominant white, Western
+male demographic.   Building and piloting this system will allow other projects
+to do the same.  We hope this will prove important in achieving our common
+goal to promote diversity in open source and science.
 
 ## Optional attachments
 
