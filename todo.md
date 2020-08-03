@@ -80,35 +80,32 @@ Landscape ... TBC
 > with respect to their contributors and audience. Please see examples from
 > successful first cycle applications (maximum of 250 words) 
 
-<!---
-Chris - remind me how you recruited Dorota Jarecka and Hao-Ting Wang?
--->
+A major motivation for our project was to democratize coding in neuroimaging.  The
+dominant package for coding in neuroimaging was `SPM`, written in Matlab.
+Python allows a wider range of scientists to use and extend our work. Unlike
+other major software in neuroimaging, we made a strong policy of establishing
+common ownership, rather than associating our code with a particular
+institution.
 
-A major motivation for our project has been to democratize coding in
-neuroimaging.  The dominant package for coding in neuroimaging is `SPM`,
-written in Matlab.  Python allows a wider range of scientists to use and
-extend our work. Unlike other major software in neuroimaging, we made a strong
-policy of establishing common ownership, rather than associating our code with
-a particular institution.
+We know that we lack diversity in contributors to Nibabel.  The gender ratio of
+students in neuroscience is near 50%, but 3.4% of our commits are from authors
+we know to identify as female.  We have made conscious progress; our lead
+maintainer contributes to neuroimaging hackathons, and, as a result, two female
+developers new to the project contributed 18% of Nibabel's commits over the
+past year.
 
-We are well aware of the lack of diversity in contributors to Nibabel.  The
-gender ratio of students in neuroscience is fairly evenly balanced, but only
-3.4% of our commits are from authors we know to identify as female.  We have
-made progress; in the last year, female developers contributed 18% of Nibabel's
-commits.
-
-Lack of diversity is self-perpetuating.  Despite our best intentions, the
+However, lack of diversity is self-perpetuating.  Despite our best intentions,
 homogeneous backgrounds of the main contributors will make us less likely to
-question our assumptions about the way we work and communicate.  This is not
-fair, but also, as in biology, monoculture is a risk to the ecosystem.
+question our assumptions about the way we work and communicate.  This is
+neither fair, nor sustainable; monoculture is a risk to the ecosystem.
 
-We want to do much more, and help others to do the same.  A large part of our
-proposal is for educational outreach, using the OpenEdX platform.  We can
-recruit from diverse groups by offering scholarships in the form of paid
-certificates, weighted for students outside our dominant white, Western
-male demographic.   Building and piloting this system will allow other projects
-to do the same.  We hope this will prove important in achieving our common
-goal to promote diversity in open source and science.
+We want to do more, and help others to do more.  A large part of our proposal
+is for educational outreach, using the OpenEdX platform.  We can recruit from
+diverse groups by offering scholarships in the form of paid certificates,
+weighted for students outside our homogeneous demographic. Building and
+piloting this system will help other projects to do the same.  We hope this
+will help to achieve our common goal to promote diversity in open source and
+science.
 
 ## Optional attachments
 
