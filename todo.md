@@ -60,7 +60,7 @@ See `./milestones.md`.
 > in this section any previous funding for these software projects received
 > from CZI (maximum of 250 words)
 
-None
+None applicable
 
 ### Landscape Analysis (required):
 
@@ -164,6 +164,8 @@ We also use Nibabel as the most basic layer of interaction with brain images, in
 
 ### List of upstream, downstream, or related software projects that the team is contributing to or receiving contributions from:
 
+We only include contributions of 10 commits or more.
+
 Matthew Brett contributions (number of commits):
 
 Upstream:
@@ -171,11 +173,12 @@ Upstream:
     Scipy : 281
     Statsmodels : 59
     Matplotlib : 56
+    Scikit-image : 10
 
 Downstream:
     Nipy : 1657
     Dipy : 564
-    
+
 Oscar Esteban contributions (number of commits):
 
 Downstream:
@@ -188,18 +191,9 @@ Downstream:
     MRIQC: 1708
     QAP: 169
     NiTransforms: 106
-    Nilearn: 12
     Phantomas: 28
-    DIPY: 3
-    ICA-AROMA: 1
 
-
-Chris Markiewicz's contributions (number of commits):
-
-Upstream:
-    indexed_gzip: 7
-    FreeSurfer (do we consider that upstream?): 5
-    Numpy: 4
+Chris Markiewicz contributions (number of commits):
 
 Downstream:
     fMRIPrep: 1010
@@ -211,10 +205,8 @@ Downstream:
     Quickshear: 31
     MRIQC: 24
     PySurfer: 10
-    PyMVPA: 8
 
-
-Downstream contributions back (number of commits, ):
+Downstream contributions back (number of commits):
     Dipy : 185
     FSL : 108
     PyMVPA : 87
