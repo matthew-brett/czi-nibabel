@@ -17,8 +17,7 @@ Our proposal has two major components:
 * Broadening social foundations by building a platform and content for
   teaching neuroimaging with Nibabel.
 
-Code foundations
-================
+## Code foundations
 
 Nibabel is a workbench, that provides a Python API for working with images in
 many formats.  It is also a base library for tools implementing higher level
@@ -31,11 +30,9 @@ Nibabel's success depends on:
 
 An expressive, broad API will increase adoption and make it easier to teach.
 
-Expressive API
-==============
+## Expressive API
 
-Axis and tick labels
---------------------
+### Axis and tick labels
 
 Brain images typically have three or four axes, whose meanings depend on the
 way the image was acquired.  Axes have natural labels, expressing meaning,
@@ -65,8 +62,7 @@ specialized parsers. We will expand these parsers to preserve full metadata and
 build a normalization layer to abstract vendor-specific storage locations for
 metadata elements that describe the same thing.
 
-API for surface data
---------------------
+### API for surface data
 
 Neuroimaging data often refers to locations on the brain surface.  There are
 three common formats for such data: GIFTI, CIFTI and Freesurfer.  Nibabel can
@@ -76,32 +72,42 @@ https://github.com/nilearn/nilearn/issues/2171.  We will develop a standard
 API, apply it to the three standard formats, and design a efficient general
 HDF5 storage container for serializing surface data and metadata.
 
-Range
-=====
+## Range
 
-Registration transforms
------------------------
+### Spatial transforms
 
-Nibabel's role as a workbench allows researchers to combine outputs from
-processing in other packages.
+Neuroimaging toolboxes include spatial registration methods to align the objects
+and other features present in two or more images in a common coordinate system.
+Registration methods therefore estimate spatial transforms as their subproduct.
+However, for their surrogate nature to the tools they were obtained with,
+there is no standard or compatible format to store and reuse them.
 
-Image registration is an important step in neuroimaging.  Many packages
-estimate image registration parameters; each has their own format for storing
-these estimates.
+Because Nibabel is a workbench, we will extend its support to ensure the compatibility
+between transforms calculated with AFNI, FreeSurfer, FSL, ITK/ANTs, NiftyReg, and SPM.
+We have developed the NiTransforms project as a subproject of Nibabel, with the
+following roadmap:
 
-Using these estimates involves interpreting the stored transforms, and
-combining chains of transforms into a single transform, to allow efficient
-resampling of an image to match the position of another.
+  * Complete the test-driven development of read/write operations from/to all
+    the above software into internal data structures:
+      * fix identified bugs in the current NiTransforms implementation,
+      * implement the support for transforms on the sphere
+  * Implementation of the X5 file format specification (BIDS extension proposal 14)
+    with labels implemented in Xarray and stored with HDF5
+  * Implementation of operations of spatial transforms:
+      * composition/chaining,
+      * distribution/outer-product,
+      * numerical inversion
+  * Implementing tooling to apply transforms on images and other data objects:
+      * coordinates (pointsets and surfaces) mapping,
+      * resampling of images (regularly gridded data), <!-- it would be interesting to consider resampling of parcellations, and also, 4D splines - neither are available in scipy to the best of my knowledge -->
+      * resampling of surfaces and mixed surface/volumes.
+  * Generate and deploy API documentation and manuals
+  * Expand the educational materials and Jupyter Notebooks.
+  * Integrate NiTransforms into Nibabel as a module.
 
-We have developed a package, Nitransforms, that can read and process several
-of the stored parameter files.  We will integrate Nitransforms into Nibabel,
-expand tests and documentation, and saving in standard HDF5 format to store
-transforms, with labels implemented in Xarray and stored with HDF5.
+## Strengthening social foundations
 
-Strengthening social foundations
-================================
-
-We want to recruit more developers, from a larger, more diverse pool, and help
+We want to engage more contributors, from a larger, more diverse pool, and help
 other projects do the same.
 
 Scientific software packages have the untapped advantage that we train in our
