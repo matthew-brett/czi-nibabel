@@ -10,7 +10,7 @@ this proposal interact? (maximum of 250 words)
 
 <!-- 243/250 words -->
 
-Nibabel is the base layer for the Nipy (Neuroimaging in Python) community of projects.  It is the basic workbench and input/output (I/O) layer on which higher-level libraries can build.
+Nibabel is the base layer for the Nipy (Neuroimaging in Python) community of projects.  It is the basic workbench and input/output layer on which higher-level libraries can build.
 
 Neuroimaging researchers need flexible tooling to analyze neural data. Python
 and Numpy provide great power and flexibility, and Nibabel provides data
@@ -24,14 +24,12 @@ The most widely-used alternatives to the Python/Nibabel ecosystem are:
     and some of them, GUIs; or
   - MATLAB/SPM (https://www.fil.ion.ucl.ac.uk/spm), which bundles low-level libraries and high-level processing.
 
-Nibabel has read/write compatibility with data formats used by SPM/FSL/AFNI so
-it can be used as a glue to work with outputs from other packages.
-The Nipype Python library provides a regular interface in Python to all the software above, thereby eliminating most of the
-incompatibilities between tools in combination with Nibabel.
-Using the Python/Nibabel/Nipype framework, researchers are equipped to build powerful high-level processing solutions such as
-fMRIPrep (https://doi.org/10.1038/s41592-018-0235-4; +200 citations as per scholar.google.com) without reinventing the wheel,
-just harnessing existing and mature OSS.
-To illustrate the ubiquity of Nibabel, FSL ships with Python code using it to manipulate images.
+The Nipype Python library provides a regular interface in Python to all the software above,
+thereby eliminating most of the incompatibilities between tools in combination with Nibabel’s
+read/write implementation of file formats.
+Using the Python/Nibabel/Nipype framework, researchers are equipped to build powerful high-level
+processing solutions such as fMRIPrep (https://doi.org/10.1038/s41592-018-0235-4; +200 citations 
+as per scholar.google.com) without reinventing the wheel, just harnessing existing and mature OSS.
 
 Counts of 2018 scholar.google.com mentions in https://doi.org/10.1146/annurev-biodatasci-072018-021237 found (name, years active, count):
 
