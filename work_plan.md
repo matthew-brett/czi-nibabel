@@ -93,7 +93,10 @@ Using these estimates involves interpreting the stored transforms, and
 combining chains of transforms into a single transform, to allow efficient
 resampling of an image to match the position of another.
 
-We have developed a package, Nitransforms, that can read and process several of the stored parameter files.  We will integrate Nitransforms into Nibabel, and develop a standard HDF5 format to store transforms, with labels implemented in Xarray and stored with HDF5.
+We have developed a package, Nitransforms, that can read and process several
+of the stored parameter files.  We will integrate Nitransforms into Nibabel,
+expand tests and documentation, and develop a standard HDF5 format to store
+transforms, with labels implemented in Xarray and stored with HDF5.
 
 Strengthening social foundations
 ================================
