@@ -8,21 +8,22 @@ user base, usage, and maturity? How do existing tools and the project(s) in
 this proposal interact? (maximum of 250 words)
 -->
 
-<!-- 243/250 words -->
+<!-- 249/250 words -->
 
-Nibabel is the base layer for the Nipy (Neuroimaging in Python) community of projects.  It is the basic workbench and input/output layer on which higher-level libraries can build.
+Nibabel is the base layer for the Nipy (Neuroimaging in Python) community of projects.
+It is the basic workbench and input/output layer on which higher-level libraries can build.
 
-Neuroimaging researchers need flexible tooling to analyze neural data. Python
-and Numpy provide great power and flexibility, and Nibabel provides data
+Neuroimaging researchers need flexible tooling to analyze neural data.
+Python and Numpy provide great power and flexibility, and Nibabel provides data
 structures and common algorithms to apply Python libraries to imaging data.
 
 Researchers using Python for neuroimaging are all but invariably using Nibabel either directly, or via a high-level library.
 
-The most direct competitor to the Python/Nibabel ecosystem is SPM,
+The most directly analogous alternative to the Python/Nibabel ecosystem is SPM,
 a MATLAB toolbox bundling low-level libraries and high-level processing: https://www.fil.ion.ucl.ac.uk/spm.
 
-Other widely-used packages with a lower emphasis on code in analysis are FSL
-AFNI, Freesurfer; these are C/C++ processing libraries and GUIs with
+Other widely-used packages with a lower emphasis on code in analysis are FSL,
+AFNI and Freesurfer; these are C/C++ processing libraries and GUIs with
 automation via shell-scripts and configuration files.
 
 Counts of 2018 scholar.google.com mentions in https://doi.org/10.1146/annurev-biodatasci-072018-021237 found (name, years active, count):
@@ -33,13 +34,13 @@ Counts of 2018 scholar.google.com mentions in https://doi.org/10.1146/annurev-bi
 * Python (2007-) 1685
 * AFNI (~1996-) 1455
 
-Nibabel has read/write compatibility with data formats used by SPM/FSL/AFNI so
-it can be used as a glue to work with outputs from other packages.  FSL ships
-with Python code that imports Nibabel.
+Nibabel has read/write compatibility with data formats used by SPM/FSL/AFNI.
+Along with Nipy's workflow engine, Nipype, it can be used as a glue to interoperate with other packages.
+FSL ships with Python code that imports Nibabel.
 
 Nibabel has public version control (PVC) since 2007, Public continuous-integration (PCI) since 2012, and 91.8% coverage.
 
 * SPM: no PVC, PCI or coverage.
 * FSL: PVC from ~2015, no PCI or coverage.
-* Freesurfer: PVC from 2017, PCI or coverage.
-* AFNI: PVC from ?2015, some PCI since ~2016, no coverage.
+* Freesurfer: PVC from 2017, no PCI or coverage.
+* AFNI: PVC from ~2015, some PCI since ~2016, no coverage.
