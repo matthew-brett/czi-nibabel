@@ -7,25 +7,60 @@
 > words)
 -->
 
-Milestones / Deliverables
-=========================
+All times are *relative to the start of the grant*; thus "6m" means the deadline is 6 months after the start of the grant.
 
-* Create framework for parsing private DICOM elements
+Expressive API
+==============
 
-* Create thin meta data normalization layer for abstracting away vendor's different storage locations
+Axis and tick labels
+--------------------
 
-* Improve current parsers for private DICOM elements (i.e. the XProtocol parser work)
+* Integrate Xarray axis / tick label support into Nibabel : 3m
+  * Contribute to Xarray if necessary to remove Pandas dependency:
+    https://github.com/pydata/xarray/issues/3981 : 0-3m
+  * Design/implement API to record/modify metadata available in standard
+    formats : 3m
+* Merge basic https://github.com/moloney/dcmstack DICOM format parsing into
+  Nibabel : 3m
+* Implement Xarray image labeling with standard DICOM metadata : 5m
+* Design/discuss HDF5 serialization of standard imaging format : 5m
+* Complete design/discussion of JSON header metadata for standard NIfTI
+  format: https://github.com/nipy/nibabel/wiki/BIAP3 : 5m
+* Implement load / save of labels using HDF5 / JSON : 7m
+* Create framework for parsing private DICOM elements : 7m
+* Improve current parsers for private DICOM elements in Siemens files: 8m
+* Create thin meta data normalization layer for abstracting away vendor's
+  different storage locations : 10m
+* Create framework for summarizing meta data across large number of DICOM
+  files : 10m
+* Extend DICOM metadata parsers to other manufacturers (Philips, GE): 12m
 
-* Create framework for summarizing meta data across large number of DICOM files
+API for surface data
+--------------------
 
-* Produce xarray labeled arrays using summary of DICOM meta data plus image data
+* Design standard API for surface data format : 3m
+* Implement standard API for surface data format : 5m
+* Design efficient HDF5 container for surface data format : 7m
 
-* Make Nifti a supported serialization format for xarray
+Range
+=====
 
-* Improve xarray serialiazation support in nibabel
+Registration transforms
+-----------------------
 
+Oscar
 
+Strengthening social foundations
+================================
 
-
-
-
+* Initial build of OpenEdX / JupyterHub integration : 4m
+* Port of content from https://bic-berkeley.github.io/psych-214-fall-2016 to
+  EdX platform : 4m
+* Video lecture materials for course : 4m
+* Start course pilot with volunteer students and developers : 4m
+* Start recruitment, advertise scholarships : 5m
+* Review course materials after pilot : 6m
+* Begin live course : 7m
+* End live course : 10m
+* Support for students doing pull-requests : 9m - 12m.
+* Issuing scholarship certificates : 12m.
