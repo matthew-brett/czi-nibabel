@@ -149,6 +149,8 @@ See `./optional_attachments.md`.
 > history, and references to any major publications, software contributions, or
 > other relevant outputs (maximum of two pages)
 
+See `./mbcv` submodule.
+
 ## Budget description
 
 > Upload in PDF format; budgets can be uploaded in a combined single PDF or one
@@ -252,3 +254,13 @@ Downstream contributions back (number of commits):
 We have been early adopters to formal software process.  We started using Git in 2007 and Github in 2010.  We required code review from 2010.  We used Buildbot for CI from 2011, Travis-CI from 2012, Appveyor from 2014, and Azure Pipelines from July 2019.
 
 Our code coverage is 91.8%; we check on each proposed merge commit with CodeCov.
+
+https://libraries.io/pypi/nibabel/sourcerank gives us a score of 20.
+
+Github gives us the following metrics:
+https://github.com/nipy/nibabel/network/dependents?package_id=UGFja2FnZS01MjM0MTE2MA%3D%3D
+
+* Used by 2,337 repositories.
+* Used by 286 packages.
+
+PyPI analysis lists 46 PyPI packages that depend on Nibabel: https://libraries.io/pypi/nibabel/dependents
