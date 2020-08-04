@@ -52,6 +52,7 @@ Registration transforms
   the above software into internal data structures:
     * fix identified bugs in the current NiTransforms implementation: 1m,
     * implement the support for transforms on the sphere: 3-5m
+    * implement sniffing of format for automaginc loading of transforms: 1m
 * Implementation of the X5 file format specification (BIDS extension proposal 14)
   with labels implemented in Xarray and stored with HDF5: 3m
 * Implementation of operations of spatial transforms:
