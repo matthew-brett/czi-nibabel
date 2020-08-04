@@ -95,7 +95,7 @@ resampling of an image to match the position of another.
 
 We have developed a package, Nitransforms, that can read and process several
 of the stored parameter files.  We will integrate Nitransforms into Nibabel,
-expand tests and documentation, and develop a standard HDF5 format to store
+expand tests and documentation, and saving in standard HDF5 format to store
 transforms, with labels implemented in Xarray and stored with HDF5.
 
 Strengthening social foundations
