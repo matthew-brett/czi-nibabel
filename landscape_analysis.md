@@ -20,8 +20,8 @@ Neuroimaging researchers need flexible tooling to analyze neural data.
 Poldrack et al. (2019; https://doi.org/10.1146/annurev-biodatasci-072018-021237) review the success of Python for neuroimaging and provide some data about the utilization of different solutions.
 The most widely-used alternatives to the Python/Nibabel ecosystem are:
 
-  - C/C++ based (AFNI, FreeSurfer, FSL, ITK/ANTs), which can be combined (but hardly mixed together) in higher-level processing with shell scripting
-    and some of them, GUIs; or
+  - C/C++ based (AFNI, FreeSurfer, FSL, ITK/ANTs), which can be integrated (although hardly mixed together) in higher-level processing with shell scripting
+    and/or GUIs; or
   - MATLAB/SPM (https://www.fil.ion.ucl.ac.uk/spm), which bundles low-level libraries and high-level processing.
 
 The Nipype Python library provides a regular interface in Python to all the software above,
@@ -30,3 +30,7 @@ read/write implementation of file formats.
 Using the Python/Nibabel/Nipype framework, researchers are equipped to build powerful high-level
 processing solutions such as fMRIPrep (https://doi.org/10.1038/s41592-018-0235-4; +200 citations 
 as per scholar.google.com) without reinventing the wheel, just harnessing existing and mature OSS.
+
+All these tools are in mature states of development, although only Nibabel has comprehensively adopted
+current best practices in software engineering (public version-control, unit tests, tests coverage,
+continuous integration, etc.)
