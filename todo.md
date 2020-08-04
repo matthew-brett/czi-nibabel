@@ -33,7 +33,7 @@ registration, and by outreach through education.
 ### Abstract/Proposal Summary (required) maximum of 250 words
 
 Nurturing and engaging a diverse community around base libraries like Nibabel is challenging.
-We will flatten the learning curve of Nibabel in particular, and more broadly, neuroimaging
+We will lower the entry barriers of Nibabel in particular, and more broadly, neuroimaging
 processing and analysis in general.
 Our __Aim 1 will strengthen the *code foundations* of Nibabel as a *brain image workbench*__.
 To achieve that, we will
@@ -43,14 +43,14 @@ design an API for brain surface data;
 and add support for loading, manipulating, applying and storing spatial transformations.
 __Aim 2 focuses on broadening the *social foundations* of the tool__.
 We will first create an open-access online course to teach neuroimaging using Nibabel as 
-brain image workbench, built on existing materials from our neuroimaging teaching in Berkeley.
+a workbench, built on existing materials from our neuroimaging teaching in Berkeley.
 These materials will be adapted as an open, engaging and comprehensive documentation resource
 for the library.
 We will recruit a broader range of developers with targeted scholarships in the form of paid
 course certificates.
 Finally, we will build and document the platform for delivering the course so that other fields
 and libraries can build on this foundation.
-Therefore, we will review and consolidate our current codebase to make it easier to learn and
+Overall, we will review and consolidate our current codebase to make it easier to learn and
 interpret from the trainee perspective and reinvent the concept of documentation of the code
 into an educational resource that grows the user base of the Python/Nibabel ecosystem,
 while offering an innovative way to engage new developers and secure the long-term
