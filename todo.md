@@ -32,32 +32,29 @@ registration, and by outreach through education.
 
 ### Abstract/Proposal Summary (required) maximum of 250 words
 
-Our proposal has two major components:
-
-* Strengthening code foundations to make Nibabel more useful as an *brain
-  image workbench* and *base library*.
-* Broadening social foundations by building a platform and content for
-  teaching neuroimaging with Nibabel.
-
-We will *strengthen code foundations* by:
-
-* Expanding the API to support image metadata by adding axis and tick labels.
-* Extending support for reading and storing metadata from scanner outputs.
-* Extending output formats to store metadata.
-* Designing a standard API for brain surface data.
-* Adding support for loading, manipulating, applying and storing outputs from
-  image registration.
-
-We will *broaden social foundations* by:
-
-* Creating an open-access online course to teach neuroimaging using Nibabel as
-  brain image workbench, built on existing materials from our neuroimaging teaching in Berkeley.
-* Using the course materials as open, engaging and comprehensive documentation
-  for the library.
-* Recruiting a broader range of developers with targeted scholarships in the
-  form of paid course certificates.
-* Building and documenting the platform for delivering the course so that other
-  fields and libraries can build on this foundation.
+Nurturing and engaging a diverse community around base libraries like Nibabel is challenging.
+We will flatten the learning curve of Nibabel in particular, and more broadly, neuroimaging
+processing and analysis in general.
+Our __Aim 1 will strengthen the *code foundations* of Nibabel as a *brain image workbench*__.
+To achieve that, we will
+adopt a more expressive API supporting more transparent and comprehensive metadata;
+extend the support for reading and storing metadata from scanner outputs;
+design an API for brain surface data;
+and add support for loading, manipulating, applying and storing spatial transformations.
+__Aim 2 focuses on broadening the *social foundations* of the tool__.
+We will first create an open-access online course to teach neuroimaging using Nibabel as 
+brain image workbench, built on existing materials from our neuroimaging teaching in Berkeley.
+These materials will be adapted as an open, engaging and comprehensive documentation resource
+for the library.
+We will recruit a broader range of developers with targeted scholarships in the form of paid
+course certificates.
+Finally, we will build and document the platform for delivering the course so that other fields
+and libraries can build on this foundation.
+Therefore, we will review and consolidate our current codebase to make it easier to learn and
+interpret from the trainee perspective and reinvent the concept of documentation of the code
+into an educational resource that grows the user base of the Python/Nibabel ecosystem,
+while offering an innovative way to engage new developers and secure the long-term
+maintenance of the project.
 
 ### Work plan
 
