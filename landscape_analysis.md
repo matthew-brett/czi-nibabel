@@ -8,16 +8,16 @@ user base, usage, and maturity? How do existing tools and the project(s) in
 this proposal interact? (maximum of 250 words)
 -->
 
-<!-- 243/250 words -->
+<!-- 249/250 words -->
 
-Nibabel is the base layer for the Nipy (Neuroimaging in Python) community of projects.  It is the basic workbench and input/output layer on which higher-level libraries can build.
+Nibabel is the base layer for the Nipy (Neuroimaging in Python) community of projects.
+It is the basic workbench and input/output layer on which higher-level libraries can build.
+Advanced visualization, model fitting, and analysis libraries in Python such as Nilearn or DIPY
+have access to the great power and flexibility of Python and Numpy via Nibabel.
+<!-- adds a reference to the big guys nilearn and dipy to support the idea of workbench -->
 
-Neuroimaging researchers need flexible tooling to analyze neural data. Python
-and Numpy provide great power and flexibility, and Nibabel provides data
-structures and common algorithms to apply Python libraries to imaging data.
-
-Researchers using Python for neuroimaging are all but invariably using Nibabel either directly, or via a high-level library (e.g., Nilearn or DIPY).
-
+Neuroimaging researchers need flexible tooling to analyze neural data.
+Poldrack et al. (2019; https://doi.org/10.1146/annurev-biodatasci-072018-021237) review the success of Python for neuroimaging and provide some data about the utilization of different solutions.
 The most widely-used alternatives to the Python/Nibabel ecosystem are:
 
   - C/C++ based (AFNI, FreeSurfer, FSL, ITK/ANTs), which can be combined (but hardly mixed together) in higher-level processing with shell scripting
@@ -30,18 +30,3 @@ read/write implementation of file formats.
 Using the Python/Nibabel/Nipype framework, researchers are equipped to build powerful high-level
 processing solutions such as fMRIPrep (https://doi.org/10.1038/s41592-018-0235-4; +200 citations 
 as per scholar.google.com) without reinventing the wheel, just harnessing existing and mature OSS.
-
-Counts of 2018 scholar.google.com mentions in https://doi.org/10.1146/annurev-biodatasci-072018-021237 found (name, years active, count):
-
-* SPM (1991-): 4850
-* FSL (2000-): 3250
-* Freesurfer (1999-): 2055
-* Python (2007-) 1685
-* AFNI (~1996-) 1455
-
-Nibabel has public version control (PVC) since 2007, Public continuous-integration (PCI) since 2012, and 91.8% coverage.
-
-* SPM: no PVC, PCI or coverage.
-* FSL: PVC from ~2015, no PCI or coverage.
-* Freesurfer: PVC from 2017, PCI or coverage.
-* AFNI: PVC from ?2015, some PCI since ~2016, no coverage.

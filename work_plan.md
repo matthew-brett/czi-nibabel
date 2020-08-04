@@ -71,7 +71,7 @@ API for surface data
 Neuroimaging data often refers to locations on the brain surface.  There are
 three common formats for such data: GIFTI, CIFTI and Freesurfer.  Nibabel can
 read these formats, but lacks a standard API for reading and storing
-surface data with metadata; see https://github.com/nipy/nibabel/issues/936, 
+surface data with metadata; see https://github.com/nipy/nibabel/issues/936,
 https://github.com/nilearn/nilearn/issues/2171.  We will develop a standard
 API, apply it to the three standard formats, and design a efficient general
 HDF5 storage container for serializing surface data and metadata.
@@ -95,7 +95,7 @@ resampling of an image to match the position of another.
 
 We have developed a package, Nitransforms, that can read and process several
 of the stored parameter files.  We will integrate Nitransforms into Nibabel,
-expand tests and documentation, and develop a standard HDF5 format to store
+expand tests and documentation, and saving in standard HDF5 format to store
 transforms, with labels implemented in Xarray and stored with HDF5.
 
 Strengthening social foundations
