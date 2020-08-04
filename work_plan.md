@@ -19,7 +19,8 @@ Our proposal has two major components:
 
 Code foundations
 ================
-Nibabel is a workbench, that provides a Python API for working with images in
+
+Nibabel is a workbench that provides a Python API for working with images in
 many formats.  It is also a base library for tools implementing higher level
 processing.
 
@@ -35,11 +36,13 @@ Expressive API
 
 Axis and tick labels
 --------------------
+
 Brain images typically have three or four axes, whose meanings depend on the
 way the image was acquired.  Axes have natural labels, expressing meaning,
 such as "time" or "slice", and they may have tick labels such as acquisition
 time.  The scanner captures this information, but typical image formats cannot
-store them, making it easier to lose metadata and make analysis errors; see https://github.com/nipy/nibabel/wiki/BIAP6
+store them, making it easier to lose metadata and make analysis errors; see
+https://github.com/nipy/nibabel/wiki/BIAP6
 
 We will expand Nibabel's API to encode axis and tick labels by integrating the
 Xarray package: http://xarray.pydata.org.  Xarray simplifies HDF5
@@ -55,22 +58,23 @@ data, or save them with the image.  We will:
 * Read image metadata from DICOM, the standard scanner format.
 
 Reading and attaching DICOM data will start with code integrated from
-Dcmstack: https://github.com/moloney/dcmstack see
-: https://github.com/nipy/nibabel/wiki/BIAP4
+Dcmstack: https://github.com/moloney/dcmstack; see:
+https://github.com/nipy/nibabel/wiki/BIAP4
 
 DICOM metadata is often hidden inside "private" DICOM elements that need
-specialized parsers. We will expand these parsers to preserve full metadata and
-build a normalization layer to abstract vendor-specific storage locations for
-metadata elements that describe the same thing.
+specialized parsers. We will expand these parsers to preserve full metadata
+and build a normalization layer to abstract vendor-specific storage locations
+for metadata elements that describe the same thing.
 
 API for surface data
 --------------------
+
 Neuroimaging data often refers to locations on the brain surface.  There are
 three common formats for such data: GIFTI, CIFTI and Freesurfer.  Nibabel can
-read these formats, but lacks a standard API for reading and storing
-surface data with metadata; see https://github.com/nipy/nibabel/issues/936,
+read these formats, but lacks a standard API for reading and storing surface
+data with metadata; see https://github.com/nipy/nibabel/issues/936,
 https://github.com/nilearn/nilearn/issues/2171.  We will develop a standard
-API, apply it to the three standard formats, and design a efficient general
+API, apply it to the three standard formats, and design an efficient general
 HDF5 storage container for serializing surface data and metadata.
 
 Range
@@ -78,31 +82,30 @@ Range
 
 Spatial transforms
 ------------------
-Neuroimaging toolboxes include spatial registration methods to align the objects
-and other features present in two or more images in a common coordinate system.
-Registration methods therefore estimate spatial transforms as their subproduct.
-However, for their surrogate nature to the tools they were obtained with,
-there is no standard or compatible format to store and reuse them.
 
-Because Nibabel is a workbench, we will extend its support to ensure the compatibility
-between transforms calculated with AFNI, FreeSurfer, FSL, ITK/ANTs, NiftyReg, and SPM.
-We have developed the NiTransforms project as a standalone extension of Nibabel to
-facilitate the development of the roadmap outlined in the milestones section
-and concludes with the integration of NiTransforms within Nibabel.
+Neuroimaging toolboxes include spatial registration methods to align the
+objects and other features present in two or more images in a common
+coordinate system. Registration methods estimate and store spatial transforms
+as their output.  There is no standard or compatible format to store and reuse these transforms, across packages.
 
-We also want to demystify an area of the neuroimaging infrastructure that remains
-obscure and inaccessible by inexperienced practitioners as part of the following
-aim.
+Because Nibabel is a workbench, we will extend its support to read transforms
+calculated with AFNI, FreeSurfer, FSL, ITK/ANTs, NiftyReg, and SPM.
+
+We have thus far developed the NiTransforms project as a standalone project;
+here we propose to complete and integrate NiTransforms into Nibabel.  This
+will make transforms more accessible to researchers, and therefore easier to
+work with, and reason about.
 
 Strengthening social foundations
 ================================
-We want to engage more contributors, from a larger, more diverse pool, and help
-other projects do the same.
 
-Scientific software packages have the untapped advantage that we train in our
-domain by using our package.  Training shows students that effective science
-has an intimate relationship with code. We should show students that analysis
-is not just code consumption, but contribution.
+We want to engage more contributors, from a larger, more diverse pool, and
+help other projects do the same.
+
+Scientific software has the untapped advantage that we train in our domain by
+using our package.  Training shows students that effective science has an
+intimate relationship with code. We should show students that analysis is not
+just code consumption, but contribution.
 
 We will develop machinery and content for an open-access EdX course in
 neuroimaging, using Nibabel as the standard workbench.  The content will teach
