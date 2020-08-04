@@ -12,35 +12,25 @@ this proposal interact? (maximum of 250 words)
 
 Nibabel is the base layer for the Nipy (Neuroimaging in Python) community of projects.
 It is the basic workbench and input/output layer on which higher-level libraries can build.
+Advanced visualization, model fitting, and analysis libraries in Python such as Nilearn or DIPY
+have access to the great power and flexibility of Python and Numpy via Nibabel.
+<!-- adds a reference to the big guys nilearn and dipy to support the idea of workbench -->
 
 Neuroimaging researchers need flexible tooling to analyze neural data.
-Python and Numpy provide great power and flexibility, and Nibabel provides data
-structures and common algorithms to apply Python libraries to imaging data.
+Poldrack et al. (2019; https://doi.org/10.1146/annurev-biodatasci-072018-021237) review the success of Python for neuroimaging and provide some data about the utilization of different solutions.
+The most widely-used alternatives to the Python/Nibabel ecosystem are:
 
-Researchers using Python for neuroimaging are all but invariably using Nibabel either directly, or via a high-level library.
+  - C/C++ based (AFNI, FreeSurfer, FSL, ITK/ANTs), which can be integrated (although hardly mixed together) in higher-level processing with shell scripting
+    and/or GUIs; or
+  - MATLAB/SPM (https://www.fil.ion.ucl.ac.uk/spm), which bundles low-level libraries and high-level processing.
 
-The most directly analogous alternative to the Python/Nibabel ecosystem is SPM,
-a MATLAB toolbox bundling low-level libraries and high-level processing: https://www.fil.ion.ucl.ac.uk/spm.
+The Nipype Python library provides a regular interface in Python to all the software above,
+thereby eliminating most of the incompatibilities between tools in combination with Nibabel’s
+read/write implementation of file formats.
+Using the Python/Nibabel/Nipype framework, researchers are equipped to build powerful high-level
+processing solutions such as fMRIPrep (https://doi.org/10.1038/s41592-018-0235-4; +200 citations 
+as per scholar.google.com) without reinventing the wheel, just harnessing existing and mature OSS.
 
-Other widely-used packages with a lower emphasis on code in analysis are FSL,
-AFNI and Freesurfer; these are C/C++ processing libraries and GUIs with
-automation via shell-scripts and configuration files.
-
-Counts of 2018 scholar.google.com mentions in https://doi.org/10.1146/annurev-biodatasci-072018-021237 found (name, years active, count):
-
-* SPM (1991-): 4850
-* FSL (2000-): 3250
-* Freesurfer (1999-): 2055
-* Python (2007-) 1685
-* AFNI (~1996-) 1455
-
-Nibabel has read/write compatibility with data formats used by SPM/FSL/AFNI.
-Along with Nipy's workflow engine, Nipype, it can be used as a glue to interoperate with other packages.
-FSL ships with Python code that imports Nibabel.
-
-Nibabel has public version control (PVC) since 2007, Public continuous-integration (PCI) since 2012, and 91.8% coverage.
-
-* SPM: no PVC, PCI or coverage.
-* FSL: PVC from ~2015, no PCI or coverage.
-* Freesurfer: PVC from 2017, no PCI or coverage.
-* AFNI: PVC from ~2015, some PCI since ~2016, no coverage.
+All these tools are in mature states of development, although only Nibabel has comprehensively adopted
+current best practices in software engineering (public version-control, unit tests, tests coverage,
+continuous integration, etc.)
