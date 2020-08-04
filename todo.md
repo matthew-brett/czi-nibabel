@@ -17,7 +17,9 @@ That organization has to sign [the form](./Inst_Approval_Form_Sept_2019.pdf).
 ** Fill in here. Check with `g CTRL-g` in Vim, or by copying into relevant box
 on page.**
 
-Strengthen the social and code foundations of the Nibabel library by outreach through education, and extension of the Nibabel API to better support modern data sources and storage formats.
+Strengthen the social and code foundations of the Nibabel library by: extending
+the API and input/output to better support metadata, support ouputs from image
+registration, and by outreach through education.
 
 ### Amount Requested (required):
 
@@ -105,8 +107,8 @@ Landscape ... TBC
 > with respect to their contributors and audience. Please see examples from
 > successful first cycle applications (maximum of 250 words) 
 
-A major motivation for our project was to democratize coding in neuroimaging.  The
-dominant package for coding in neuroimaging was `SPM`, written in Matlab.
+A major motivation for our project was to democratize coding in neuroimaging.
+The dominant package for coding in neuroimaging was `SPM`, written in Matlab.
 Python allows a wider range of scientists to use and extend our work. Unlike
 other major software in neuroimaging, we made a strong policy of establishing
 common ownership, rather than associating our code with a particular
