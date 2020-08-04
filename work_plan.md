@@ -85,25 +85,12 @@ there is no standard or compatible format to store and reuse them.
 Because Nibabel is a workbench, we will extend its support to ensure the compatibility
 between transforms calculated with AFNI, FreeSurfer, FSL, ITK/ANTs, NiftyReg, and SPM.
 We have developed the NiTransforms project as a standalone extension of Nibabel to
-facilitate the development of the following roadmap:
+facilitate the development of the roadmap outlined in the milestones section
+and concludes with the integration of NiTransforms within Nibabel.
 
-  * Complete the test-driven development of read/write operations from/to all
-    the above software into internal data structures:
-      * fix identified bugs in the current NiTransforms implementation,
-      * implement the support for transforms on the sphere
-  * Implementation of the X5 file format specification (BIDS extension proposal 14)
-    with labels implemented in Xarray and stored with HDF5
-  * Implementation of operations of spatial transforms:
-      * composition/chaining,
-      * distribution/outer-product,
-      * numerical inversion
-  * Implementing tooling to apply transforms on images and other data objects:
-      * coordinates (pointsets and surfaces) mapping,
-      * resampling of images (regularly gridded data), <!-- it would be interesting to consider resampling of parcellations, and also, 4D splines - neither are available in scipy to the best of my knowledge -->
-      * resampling of surfaces and mixed surface/volumes.
-  * Generate and deploy API documentation and manuals
-  * Expand the educational materials and Jupyter Notebooks.
-  * Integrate NiTransforms into Nibabel as a module.
+We also want to demystify an area of the neuroimaging infrastructure that remains
+obscure and inaccessible by inexperienced practitioners as part of the following
+aim.
 
 ## Strengthening social foundations
 
