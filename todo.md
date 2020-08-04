@@ -30,7 +30,32 @@ Strengthen the social and code foundations of the Nibabel library by outreach th
 
 ### Abstract/Proposal Summary (required) maximum of 250 words
 
-Abstract ... TBC
+Our proposal has two major components:
+
+* Strengthening code foundations to make Nibabel more useful as an *brain
+  image workbench* and *base library*.
+* Broadening social foundations by building a platform and content for
+  teaching neuroimaging with Nibabel.
+
+We will *strengthen code foundations* by:
+
+* Expanding the API to support image metadata by adding axis and tick labels.
+* Extending support for reading and storing metadata from scanner outputs.
+* Extending output formats to store metadata.
+* Designing a standard API for brain surface data.
+* Adding support for loading, manipulating, applying and storing outputs from
+  image registration.
+
+We will *broaden social foundations* by:
+
+* Creating an open-access online course to teach neuroimaging using Nibabel as
+  brain image workbench, built on existing materials from our neuroimaging teaching in Berkeley.
+* Using the course materials as open, engaging and comprehensive documentation
+  for the library.
+* Recruiting a broader range of developers with targeted scholarships in the
+  form of paid course certificates.
+* Building and documenting the platform for delivering the course so that other
+  fields and libraries can build on this foundation.
 
 ### Work plan
 
