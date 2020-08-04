@@ -17,8 +17,8 @@ Our proposal has two major components:
 * Broadening social foundations by building a platform and content for
   teaching neuroimaging with Nibabel.
 
-## Code foundations
-
+Code foundations
+================
 Nibabel is a workbench, that provides a Python API for working with images in
 many formats.  It is also a base library for tools implementing higher level
 processing.
@@ -30,10 +30,11 @@ Nibabel's success depends on:
 
 An expressive, broad API will increase adoption and make it easier to teach.
 
-## Expressive API
+Expressive API
+==============
 
-### Axis and tick labels
-
+Axis and tick labels
+--------------------
 Brain images typically have three or four axes, whose meanings depend on the
 way the image was acquired.  Axes have natural labels, expressing meaning,
 such as "time" or "slice", and they may have tick labels such as acquisition
@@ -62,8 +63,8 @@ specialized parsers. We will expand these parsers to preserve full metadata and
 build a normalization layer to abstract vendor-specific storage locations for
 metadata elements that describe the same thing.
 
-### API for surface data
-
+API for surface data
+--------------------
 Neuroimaging data often refers to locations on the brain surface.  There are
 three common formats for such data: GIFTI, CIFTI and Freesurfer.  Nibabel can
 read these formats, but lacks a standard API for reading and storing
@@ -72,10 +73,11 @@ https://github.com/nilearn/nilearn/issues/2171.  We will develop a standard
 API, apply it to the three standard formats, and design a efficient general
 HDF5 storage container for serializing surface data and metadata.
 
-## Range
+Range
+=====
 
-### Spatial transforms
-
+Spatial transforms
+------------------
 Neuroimaging toolboxes include spatial registration methods to align the objects
 and other features present in two or more images in a common coordinate system.
 Registration methods therefore estimate spatial transforms as their subproduct.
@@ -92,8 +94,8 @@ We also want to demystify an area of the neuroimaging infrastructure that remain
 obscure and inaccessible by inexperienced practitioners as part of the following
 aim.
 
-## Strengthening social foundations
-
+Strengthening social foundations
+================================
 We want to engage more contributors, from a larger, more diverse pool, and help
 other projects do the same.
 
