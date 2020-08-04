@@ -3,7 +3,7 @@ PDFS:=$(patsubst %.md,%.pdf, $(MDS))
 
 DO_PANDOC=pandoc --filter pandoc-citeproc -o
 
-all: pdfs cv
+all: pdfs
 
 pdfs: $(PDFS)
 
