@@ -8,7 +8,7 @@ user base, usage, and maturity? How do existing tools and the project(s) in
 this proposal interact? (maximum of 250 words)
 -->
 
-<!-- 247/250 words -->
+<!-- 243/250 words -->
 
 Nibabel is the base layer for the Nipy (Neuroimaging in Python) community of projects.  It is the basic workbench and input/output layer on which higher-level libraries can build.
 
@@ -42,4 +42,4 @@ Nibabel has public version control (PVC) since 2007, Public continuous-integrati
 * SPM: no PVC, PCI or coverage.
 * FSL: PVC from ~2015, no PCI or coverage.
 * Freesurfer: PVC from 2017, PCI or coverage.
-* AFNI: PVC from ?2015, PCI since ~2019, no coverage.
+* AFNI: PVC from ?2015, some PCI since ~2016, no coverage.
