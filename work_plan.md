@@ -41,7 +41,7 @@ Brain images typically have three or four axes, whose meanings depend on the
 way the image was acquired.  Axes have natural labels, expressing meaning,
 such as "time" or "slice", and they may have tick labels such as acquisition
 time.  The scanner captures this information, but typical image formats cannot
-store them, making it easier to lose metadata and make analysis errors; see
+store it, so it is easy to lose metadata and make analysis errors; see
 https://github.com/nipy/nibabel/wiki/BIAP6
 
 We will expand Nibabel's API to encode axis and tick labels by integrating the
@@ -58,8 +58,8 @@ data, or save them with the image.  We will:
 * Read image metadata from DICOM, the standard scanner format.
 
 Reading and attaching DICOM data will start with code integrated from
-Dcmstack: https://github.com/moloney/dcmstack; see:
-https://github.com/nipy/nibabel/wiki/BIAP4
+Dcmstack, by Brendan Moloney: https://github.com/moloney/dcmstack; see:
+https://github.com/nipy/nibabel/wiki/BIAP4.  Brendan will contribute to this work.
 
 DICOM metadata is often hidden inside "private" DICOM elements that need
 specialized parsers. We will expand these parsers to preserve full metadata
@@ -74,8 +74,8 @@ three common formats for such data: GIFTI, CIFTI and Freesurfer.  Nibabel can
 read these formats, but lacks a standard API for reading and storing surface
 data with metadata; see https://github.com/nipy/nibabel/issues/936,
 https://github.com/nilearn/nilearn/issues/2171.  We will develop a standard
-API, apply it to the three standard formats, and design an efficient general
-HDF5 storage container for serializing surface data and metadata.
+API, apply it to the standard formats, and design an efficient general HDF5
+storage container for serializing surface data and metadata.
 
 Range
 =====
@@ -84,17 +84,17 @@ Spatial transforms
 ------------------
 
 Neuroimaging toolboxes include spatial registration methods to align the
-objects and other features present in two or more images in a common
-coordinate system. Registration methods estimate and store spatial transforms
-as their output.  There is no standard or compatible format to store and reuse these transforms, across packages.
+objects and features present in two or more images. Registration methods
+estimate and store spatial transforms.  There is no standard or compatible
+format to store and reuse these transforms, across packages.
 
 Because Nibabel is a workbench, we will extend its support to read transforms
 calculated with AFNI, FreeSurfer, FSL, ITK/ANTs, NiftyReg, and SPM.
 
-We have thus far developed the NiTransforms project as a standalone project;
-here we propose to complete and integrate NiTransforms into Nibabel.  This
-will make transforms more accessible to researchers, and therefore easier to
-work with, and reason about.
+We have developed the NiTransforms project for this task; here we propose to
+complete and integrate NiTransforms into Nibabel.  This will make transforms
+more accessible to researchers, and therefore easier to work with, and reason
+about.
 
 Strengthening social foundations
 ================================
@@ -130,4 +130,4 @@ white Western male demographic.
 
 Development and pilot testing from this grant will provide documentation, code
 and hosting options to make it easier for other projects to use and extend
-this model.
+this model, to attract developers, and as a source of funding.
