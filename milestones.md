@@ -45,8 +45,8 @@ API for surface data
 Range
 =====
 
-Registration transforms
------------------------
+Spatial transforms
+------------------
 
 * Complete the test-driven development of read/write operations from/to all
   the above software into internal data structures:
