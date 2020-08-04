@@ -51,21 +51,20 @@ Registration transforms
 * Complete the test-driven development of read/write operations from/to all
   the above software into internal data structures:
     * fix identified bugs in the current NiTransforms implementation: 1m,
-    * implement the support for transforms on the sphere: 3-5m
-    * implement sniffing of format for automaginc loading of transforms: 1m
+    * implement sniffing of format for automagic loading of transforms: 5m
+    * implement the support for transforms on the sphere: 10m
+* Implementation of operations of spatial transforms (7m):
+    * composition/chaining (done),
+    * numerical inversion of nonlinear transforms,
+    * distribution/outer-product
 * Implementation of the X5 file format specification (BIDS extension proposal
-14) with labels implemented in Xarray and stored with HDF5: 3m
-* Implementation of operations of spatial transforms:
-    * composition/chaining (0m - done),
-    * distribution/outer-product (2m),
-    * numerical inversion (2m)
-* Implementing tooling to apply transforms on images and other data objects:
-    * coordinates (pointsets and surfaces) mapping (0m - done),
-    * resampling of images (regularly gridded data) (0m - done), <!-- it would be interesting to consider resampling of parcellations, and also, 4D splines - neither are available in scipy to the best of my knowledge -->
-    * resampling of surfaces and mixed surface/volumes (1m).
-* Generate and deploy API documentation and manuals (0.5m).
-* Expand the educational materials and Jupyter Notebooks (3m).
-* Integrate NiTransforms into Nibabel as a module (0.5m).
+  14) with labels implemented in Xarray and stored with HDF5: 12m
+* Implementing tooling to apply transforms on images and other data objects (3m):
+    * coordinates (pointsets and surfaces) mapping (done),
+    * resampling of images (regularly gridded data) (done), <!-- it would be interesting to consider resampling of parcellations, and also, 4D splines - neither are available in scipy to the best of my knowledge -->
+    * resampling of surfaces and mixed surface/volumes.
+* Generate and deploy API documentation and manuals: 1m.
+* Integrate NiTransforms into Nibabel as a module: 11m.
 
 Strengthening social foundations
 ================================
@@ -73,6 +72,7 @@ Strengthening social foundations
 * Initial build of OpenEdX / JupyterHub integration : 4m
 * Port of content from https://bic-berkeley.github.io/psych-214-fall-2016 to
   EdX platform : 4m
+* Expand the educational materials and Jupyter Notebooks of NiTransforms: 4m.
 * Video lecture materials for course : 4m
 * Start course pilot with volunteer students and developers : 4m
 * Start recruitment, advertise scholarships : 5m
