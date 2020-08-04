@@ -84,8 +84,8 @@ there is no standard or compatible format to store and reuse them.
 
 Because Nibabel is a workbench, we will extend its support to ensure the compatibility
 between transforms calculated with AFNI, FreeSurfer, FSL, ITK/ANTs, NiftyReg, and SPM.
-We have developed the NiTransforms project as a subproject of Nibabel, with the
-following roadmap:
+We have developed the NiTransforms project as a standalone extension of Nibabel to
+facilitate the development of the following roadmap:
 
   * Complete the test-driven development of read/write operations from/to all
     the above software into internal data structures:
