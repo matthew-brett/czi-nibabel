@@ -19,7 +19,6 @@ Our proposal has two major components:
 
 Code foundations
 ================
-
 Nibabel is a workbench, that provides a Python API for working with images in
 many formats.  It is also a base library for tools implementing higher level
 processing.
@@ -36,7 +35,6 @@ Expressive API
 
 Axis and tick labels
 --------------------
-
 Brain images typically have three or four axes, whose meanings depend on the
 way the image was acquired.  Axes have natural labels, expressing meaning,
 such as "time" or "slice", and they may have tick labels such as acquisition
@@ -67,7 +65,6 @@ metadata elements that describe the same thing.
 
 API for surface data
 --------------------
-
 Neuroimaging data often refers to locations on the brain surface.  There are
 three common formats for such data: GIFTI, CIFTI and Freesurfer.  Nibabel can
 read these formats, but lacks a standard API for reading and storing
@@ -79,29 +76,27 @@ HDF5 storage container for serializing surface data and metadata.
 Range
 =====
 
-Registration transforms
------------------------
+Spatial transforms
+------------------
+Neuroimaging toolboxes include spatial registration methods to align the objects
+and other features present in two or more images in a common coordinate system.
+Registration methods therefore estimate spatial transforms as their subproduct.
+However, for their surrogate nature to the tools they were obtained with,
+there is no standard or compatible format to store and reuse them.
 
-Nibabel's role as a workbench allows researchers to combine outputs from
-processing in other packages.
+Because Nibabel is a workbench, we will extend its support to ensure the compatibility
+between transforms calculated with AFNI, FreeSurfer, FSL, ITK/ANTs, NiftyReg, and SPM.
+We have developed the NiTransforms project as a standalone extension of Nibabel to
+facilitate the development of the roadmap outlined in the milestones section
+and concludes with the integration of NiTransforms within Nibabel.
 
-Image registration is an important step in neuroimaging.  Many packages
-estimate image registration parameters; each has their own format for storing
-these estimates.
-
-Using these estimates involves interpreting the stored transforms, and
-combining chains of transforms into a single transform, to allow efficient
-resampling of an image to match the position of another.
-
-We have developed a package, Nitransforms, that can read and process several
-of the stored parameter files.  We will integrate Nitransforms into Nibabel,
-expand tests and documentation, and saving in standard HDF5 format to store
-transforms, with labels implemented in Xarray and stored with HDF5.
+We also want to demystify an area of the neuroimaging infrastructure that remains
+obscure and inaccessible by inexperienced practitioners as part of the following
+aim.
 
 Strengthening social foundations
 ================================
-
-We want to recruit more developers, from a larger, more diverse pool, and help
+We want to engage more contributors, from a larger, more diverse pool, and help
 other projects do the same.
 
 Scientific software packages have the untapped advantage that we train in our
