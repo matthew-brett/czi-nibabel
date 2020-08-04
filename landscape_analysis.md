@@ -1,15 +1,45 @@
 # Landscape Analysis
 
+<!---
+Describe the other software tools (either proprietary or open source) that
+the audience for this proposal is primarily using. How do the software
+projects in this proposal compare to these other tools in terms of size of
+user base, usage, and maturity? How do existing tools and the project(s) in
+this proposal interact? (maximum of 250 words)
+-->
+
 <!-- 247/250 words -->
 
-Nibabel exists within the Nipy (Neuroimaging in Python) community of projects, forming the I/O layer for more specifically targeted packages. In addition to Nipy, neuroimaging researchers have access to several generalist suites, including SPM, AFNI, FSL and FreeSurfer, as well as a number of modality or analysis-specific suites. Nipy was initiated in 2006, compared to 1990 (SPM), 1994 (AFNI) or 1998 (FSL, FreeSurfer).
+Nibabel is the base layer for the Nipy (Neuroimaging in Python) community of projects.  It is the basic workbench and input/output layer on which higher-level libraries can build.
 
-Neuroimaging researchers require flexible tooling to analyze neural data. The Python language provides arbitrary flexibility, and Nipy tools provide data structures and common algoirthms. The SPM suite is a MATLAB toolbox, enabling researchers to write custom MATLAB scripts. FSL, AFNI, FreeSurfer and ANTs are predominantly C/C++ packages, which provide flexibility via shell scripting, configuration files and complex command-line invocations.
+Neuroimaging researchers need flexible tooling to analyze neural data. Python
+and Numpy provide great power and flexibility, and Nibabel provides data
+structures and common algorithms to apply Python libraries to imaging data.
 
-Poldrack, et al., 2019 (https://doi.org/10.1146/annurev-biodatasci-072018-021237) determined that Python was used in 1700 functional neuroimaging publications in 2018, compared with AFNI (1450), FreeSurfer (2050), FSL (3250) SPM (4850) and MATLAB (7400). The metric was mentions in Google Scholar.
+Researchers using Python for neuroimaging are all but invariably using Nibabel either directly, or via a high-level library.
 
-Beyond forming the core of a Python-based software stack, Nibabel strives to achieve read/write compatibility with the data formats used by other software packages, enabling researchers to work with the tools that best suit their task. 
+The most direct competitor to the Python/Nibabel ecosystem is SPM,
+a MATLAB toolbox bundling low-level libraries and high-level processing: https://www.fil.ion.ucl.ac.uk/spm.
 
-The AFNI and FSL suites, although primarily written in C, now contain Python packages as well. AFNI’s Python code is primarily used for visualization and to coordinate AFNI binary programs. The fslpy package uses Nibabel for its neuroimage IO.
+Other widely-used packages with a lower emphasis on code in analysis are FSL
+AFNI, Freesurfer; these are C/C++ processing libraries and GUIs with
+automation via shell-scripts and configuration files.
 
-Nibabel is a direct dependency of 286 packages and 2,335 repositories on GitHub.
+Counts of 2018 scholar.google.com mentions in https://doi.org/10.1146/annurev-biodatasci-072018-021237 found (name, years active, count):
+
+* SPM (1991-): 4850
+* FSL (2000-): 3250
+* Freesurfer (1999-): 2055
+* Python (2007-) 1685
+* AFNI (~1996-) 1455
+
+Nibabel has read/write compatibility with data formats used by SPM/FSL/AFNI so
+it can be used as a glue to work with outputs from other packages.  FSL and
+AFNI ship with Python code that imports Nibabel.
+
+Nibabel has public version control (PVC) since 2007, Public continuous-integration (PCI) since 2012, and 91.8% coverage.
+
+* SPM: no PVC, PCI or coverage.
+* FSL: PVC from ~2015, no PCI or coverage.
+* Freesurfer: no PVC, PCI or coverage.
+* AFNI: PVC from ?2015, PCI for builds but not tests, no coverage.

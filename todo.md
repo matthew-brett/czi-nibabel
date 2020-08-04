@@ -97,7 +97,7 @@ None applicable
 > user base, usage, and maturity? How do existing tools and the project(s) in
 > this proposal interact? (maximum of 250 words)
 
-Landscape ... TBC
+See `landscape_analysis.md`.
 
 ### Diversity, Equity, and Inclusion Statement (required):
 
