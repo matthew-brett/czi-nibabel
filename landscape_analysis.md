@@ -34,12 +34,12 @@ Counts of 2018 scholar.google.com mentions in https://doi.org/10.1146/annurev-bi
 * AFNI (~1996-) 1455
 
 Nibabel has read/write compatibility with data formats used by SPM/FSL/AFNI so
-it can be used as a glue to work with outputs from other packages.  FSL and
-AFNI ship with Python code that imports Nibabel.
+it can be used as a glue to work with outputs from other packages.  FSL ships
+with Python code that imports Nibabel.
 
 Nibabel has public version control (PVC) since 2007, Public continuous-integration (PCI) since 2012, and 91.8% coverage.
 
 * SPM: no PVC, PCI or coverage.
 * FSL: PVC from ~2015, no PCI or coverage.
-* Freesurfer: no PVC, PCI or coverage.
-* AFNI: PVC from ?2015, PCI for builds but not tests, no coverage.
+* Freesurfer: PVC from 2017, PCI or coverage.
+* AFNI: PVC from ?2015, PCI since ~2019, no coverage.
