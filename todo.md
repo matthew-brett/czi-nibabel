@@ -32,29 +32,30 @@ registration, and by outreach through education.
 
 ### Abstract/Proposal Summary (required) maximum of 250 words
 
-Nurturing and engaging a diverse community around base libraries like Nibabel is challenging.
-We will lower the entry barriers of Nibabel in particular, and more broadly, neuroimaging
-processing and analysis in general.
-Our __Aim 1 will strengthen the *code foundations* of Nibabel as a *brain image workbench*__.
-To achieve that, we will
-adopt a more expressive API supporting more transparent and comprehensive metadata;
+Nurturing active and diverse communities around core libraries is challenging.
+Here we propose a two-fold strategy to lower barriers to entry for Nibabel, a 
+brain image workbench that forms a key component of neuroimaging in Python.
+
+__Aim 1 is to strengthen the *code foundations* of Nibabel__.
+To achieve this, we will
+develop a more expressive API supporting more transparen and comprehensive metadata;
 extend the support for reading and storing metadata from scanner outputs;
-design an API for brain surface data;
+design a standard API for brain surface data;
 and add support for loading, manipulating, applying and storing spatial transformations.
-__Aim 2 focuses on broadening the *social foundations* of the tool__.
-We will first create an open-access online course to teach neuroimaging using Nibabel as 
+__Aim 2 is to broaden the *social foundations* of Nibabel__.
+We will first create an open-access, online course to teach neuroimaging using Python and Nibabel as
 a workbench, built on existing materials from our neuroimaging teaching in Berkeley.
-These materials will be adapted as an open, engaging and comprehensive documentation resource
+These materials will also serve as open, engaging and comprehensive documentation resource
 for the library.
 We will recruit a broader range of developers with targeted scholarships in the form of paid
 course certificates.
-Finally, we will build and document the platform for delivering the course so that other fields
+Finally, we will build and document the platform for delivering the course, so that other fields
 and libraries can build on this foundation.
-Overall, we will review and consolidate our current codebase to make it easier to learn and
-interpret from the trainee perspective and reinvent the concept of documentation of the code
-into an educational resource that grows the user base of the Python/Nibabel ecosystem,
-while offering an innovative way to engage new developers and secure the long-term
-maintenance of the project.
+
+Overall, we will extend and improve our current codebase to make it easier to learn and
+interpret as a neuroimaging trainee, and we will produce and deliver educational material
+that develops neuroimaging concepts through the Python/Nibabel ecosystem, training researchers
+who will be equipped to understand, modify and improve the tools they use, including Nibabel.
 
 ### Work plan
 
