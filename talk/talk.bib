@@ -1,0 +1,942 @@
+%%% ====================================================================
+%%% Acknowledgement abbreviations:
+
+@String{ack-nhfb = "Nelson H. F. Beebe,
+                    University of Utah,
+                    Department of Mathematics, 110 LCB,
+                    155 S 1400 E RM 233,
+                    Salt Lake City, UT 84112-0090, USA,
+                    Tel: +1 801 581 5254,
+                    FAX: +1 801 581 4148,
+                    e-mail: \path|beebe@math.utah.edu|,
+                            \path|beebe@acm.org|,
+                            \path|beebe@computer.org| (Internet),
+                    URL: \path|http://www.math.utah.edu/~beebe/|"}
+
+%%% ====================================================================%%% ====================================================================
+%%% Publisher abbreviations:
+%%% From: http://ftp.math.utah.edu/pub/bibnet/authors/t/tukey-john-w.bib
+
+@String{pub-ACADEMIC            = "Academic Press"}
+@String{pub-ACADEMIC:adr        = "New York, USA"}
+
+@String{pub-ACM                 = "ACM Press"}
+@String{pub-ACM:adr             = "New York, NY 10036, USA"}
+
+@String{pub-AFIPS               = "AFIPS Press"}
+@String{pub-AFIPS:adr           = "Montvale, NJ, USA"}
+
+@String{pub-ATT-BELL            = "AT\&T Bell Laboratories"}
+@String{pub-ATT-BELL:adr        = "Murray Hill, NJ, USA"}
+
+@String{pub-AW                  = "Ad{\-d}i{\-s}on-Wes{\-l}ey"}
+@String{pub-AW:adr              = "Reading, MA, USA"}
+
+@String{pub-BIRKHAUSER          = "Birkh{\"{a}}user"}
+@String{pub-BIRKHAUSER:adr      = "Cambridge, MA, USA; Berlin, Germany; Basel,
+                                  Switzerland"}
+
+@String{pub-CHAPMAN-HALL        = "Chapman and Hall, Ltd."}
+@String{pub-CHAPMAN-HALL:adr    = "London, UK"}
+
+@String{pub-CHAPMAN-HALL-CRC    = "Chapman and Hall/CRC"}
+@String{pub-CHAPMAN-HALL-CRC:adr = "Boca Raton, FL, USA"}
+
+@String{pub-DEKKER              = "Marcel Dekker"}
+@String{pub-DEKKER:adr          = "New York, NY, USA"}
+
+@String{pub-DOVER               = "Dover Publications, Inc."}
+@String{pub-DOVER:adr           = "New York, NY, USA"}
+
+@String{pub-ELSEVIER            = "Elsevier"}
+@String{pub-ELSEVIER:adr        = "Amsterdam, The Netherlands"}
+
+@String{pub-IBM                 = "IBM Corporation"}
+@String{pub-IBM:adr             = "San Jose, CA, USA"}
+
+@String{pub-IEEE                = "IEEE Computer Society Press"}
+@String{pub-IEEE:adr            = "1109 Spring Street, Suite 300, Silver
+                                  Spring, MD 20910, USA"}
+
+@String{pub-MCGRAW-HILL         = "Mc{\-}Graw-Hill"}
+@String{pub-MCGRAW-HILL:adr     = "New York, NY, USA"}
+
+@String{pub-NAP                 = "National Academy Press"}
+@String{pub-NAP:adr             = "Washington, DC, USA"}
+
+@String{pub-NCGA                = "National Computer Graphics Association"}
+@String{pub-NCGA:adr            = "Fairfax, VA, USA"}
+
+@String{pub-NORTH-HOLLAND       = "North-Holland Publishing Co."}
+@String{pub-NORTH-HOLLAND:adr   = "Amsterdam, The Netherlands"}
+
+@String{pub-NTIS                = "National Technical Information Service"}
+@String{pub-NTIS:adr            = "Washington, DC, USA"}
+
+@String{pub-PERGAMON            = "Pergamon"}
+@String{pub-PERGAMON:adr        = "New York, NY, USA"}
+
+@String{pub-PH                  = "Pren{\-}tice-Hall"}
+@String{pub-PH:adr              = "Upper Saddle River, NJ 07458, USA"}
+
+@String{pub-PHILOSOPHICAL-LIBRARY = "Philosophical Library"}
+@String{pub-PHILOSOPHICAL-LIBRARY:adr = "New York, NY, USA"}
+
+@String{pub-PLENUM              = "Plenum Press"}
+@String{pub-PLENUM:adr          = "New York, NY, USA; London, UK"}
+
+@String{pub-PRINCETON           = "Princeton University Press"}
+@String{pub-PRINCETON:adr       = "Princeton, NJ, USA"}
+
+@String{pub-SIAM                = "SIAM Press"}
+@String{pub-SIAM:adr            = "Philadelphia, PA, USA"}
+
+@String{pub-SPARTAN             = "Spartan Books"}
+@String{pub-SPARTAN:adr         = "New York, NY, USA"}
+
+@String{pub-STANFORD            = "Stanford University Press"}
+@String{pub-STANFORD:adr        = "Stanford, CA, USA"}
+
+@String{pub-SV                  = "Springer-Verlag"}
+@String{pub-SV:adr              = "Berlin, Germany~/ Heidelberg, Germany~/
+                                  London, UK~/ etc."}
+
+@String{pub-U-CAL               = "University of California Press"}
+@String{pub-U-CAL:adr           = "Berkeley, CA, USA"}
+
+@String{pub-U-MICHIGAN          = "University of Michigan Press"}
+@String{pub-U-MICHIGAN:adr      = "Ann Arbor, MI, USA"}
+
+@String{pub-USGPO               = "United States Government Printing Office"}
+@String{pub-USGPO:adr           = "Washington, DC, USA"}
+
+@String{pub-WADSWORTH           = "Wadsworth"}
+@String{pub-WADSWORTH:adr       = "Pacific Grove, CA, USA"}
+
+@String{pub-WADSWORTH-BROOKS-COLE = "Wadsworth \& Brooks\slash Cole Advanced
+                                  Books \& Software"}
+@String{pub-WADSWORTH-BROOKS-COLE:adr = "Monterey, CA, USA"}
+
+@String{pub-WILEY               = "Wiley"}
+@String{pub-WILEY:adr           = "New York, NY, USA"}
+
+@String{pub-YALE                = "Yale University Press"}
+@String{pub-YALE:adr            = "New Haven, CT, USA"}
+
+%%% ====================================================================
+
+@article{lin2015revisit,
+  title={A revisit to contingency table and tests of independence: bootstrap is preferred to Chi-Square approximations as well as Fisher’s exact test},
+  author={Lin, Jyh-Jiuan and Chang, Ching-Hui and Pal, Nabendu},
+  journal={Journal of biopharmaceutical statistics},
+  volume={25},
+  number={3},
+  pages={438--458},
+  year={2015},
+  publisher={Taylor \& Francis}
+}
+
+@article{amiri2011efficiency,
+  title={On the efficiency of bootstrap method into the analysis contingency table},
+  author={Amiri, Saeid and von Rosen, Dietrich},
+  journal={Computer methods and programs in biomedicine},
+  volume={104},
+  number={2},
+  pages={182--187},
+  year={2011},
+  publisher={Elsevier}
+}
+
+@article{agresti1979exact,
+  title={Exact conditional tests for cross-classifications: approximation of attained significance levels},
+  author={Agresti, Alan and Wackerly, Dennis and Boyett, James M},
+  journal={Psychometrika},
+  volume={44},
+  number={1},
+  pages={75--83},
+  year={1979},
+  publisher={Springer}
+}
+
+@book{agresti2003categorical,
+  title={Categorical Data Analysis},
+  author={Agresti, Alan},
+  volume={482},
+  year={2003},
+  publisher={John Wiley \& Sons},
+  url={http://mathdept.iut.ac.ir/sites/mathdept.iut.ac.ir/files/AGRESTI.PDF}
+}
+
+@article{cobb2007introductory,
+  title={The introductory statistics course: A Ptolemaic curriculum?},
+  author={Cobb, George W},
+  journal={Technology Innovations in Statistics Education},
+  volume={1},
+  number={1},
+  year={2007}
+}
+
+@article{cobb2015mere,
+  title={Mere renovation is too little too late: We need to rethink our undergraduate curriculum from the ground up},
+  author={Cobb, George},
+  journal={The American Statistician},
+  volume={69},
+  number={4},
+  pages={266--282},
+  year={2015},
+  publisher={Taylor \& Francis}
+}
+
+@misc{horton2015mere_responses,
+  title={Responses to: Mere renovation is too little too late: We need to rethink our undergraduate curriculum from the ground up},
+  editor={Nicholas Horton},
+  year={2015},
+  howpublished =
+  {\url{https://nhorton.people.amherst.edu/mererenovation}}
+}
+
+@article{horton2015think,
+author = {Nicholas J. Horton and Johanna S. Hardin},
+title = {Teaching the Next Generation of Statistics Students to “Think With Data”: Special Issue on Statistics and the Undergraduate Curriculum},
+journal = {The American Statistician},
+volume = {69},
+number = {4},
+pages = {259-265},
+year = {2015},
+doi = {10.1080/00031305.2015.1094283},
+URL = {http://dx.doi.org/10.1080/00031305.2015.1094283},
+eprint = {http://dx.doi.org/10.1080/00031305.2015.1094283}
+}
+
+@incollection{temple_lang2015,
+editor = {Nicholas J. Horton},
+booktitle = {Online supplement discussion of "Mere Renovation is Too Little
+    Too Late: We Need to Rethink Our Undergraduate Curriculum from the Ground
+        Up"},
+year = {2015},
+author = {Temple Lang, Duncan},
+title = {Authentic Data Analysis Experience},
+URL = {https://nhorton.people.amherst.edu/mererenovation/11_Temple-Lang.PDF}
+}
+
+@article{hesterberg2015teachers,
+  title={What teachers should know about the bootstrap: Resampling in the undergraduate statistics curriculum},
+  author={Hesterberg, Tim C},
+  journal={The American Statistician},
+  volume={69},
+  number={4},
+  pages={371--386},
+  year={2015},
+  publisher={Taylor \& Francis}
+}
+
+@book{chihara2012mathematical,
+  title={Mathematical statistics with resampling and R},
+  author={Chihara, Laura M and Hesterberg, Tim C},
+  year={2012},
+  publisher={John Wiley \& Sons}
+}
+
+@article{simon1997resampling,
+  title={Resampling: The new statistics},
+  author={Simon, Julian Lincoln},
+  edition=2,
+  year={1997},
+  publisher={Resampling Stats},
+  address={Arlington, VA},
+  url={https://www.resample.com/intro-text-online}
+}
+
+@article{simon1976probability,
+  title={Probability and statistics: Experimental results of a radically different teaching method},
+  author={Simon, Julian L and Atkinson, David T and Shevokas, Carolyn},
+  journal={The American Mathematical Monthly},
+  volume={83},
+  number={9},
+  pages={733--739},
+  year={1976},
+  publisher={JSTOR}
+}
+
+@article{simon1969new,
+  title={A new way to teach probability statistics},
+  author={Simon, Julian L and Holmes, Allen},
+  journal={The Mathematics Teacher},
+  volume={62},
+  number={4},
+  pages={283--288},
+  year={1969},
+  publisher={JSTOR}
+}
+
+@book{grus2015data,
+  title={Data science from scratch: First principles with Python},
+  author={Grus, Joel},
+  year={2015},
+  publisher={"O'Reilly Media, Inc."}
+}
+
+@article{shasha2010statistics,
+  title={Statistics is Easy! Second Edition},
+  author={Shasha, Dennis and Wilson, Manda},
+  journal={Synthesis Lectures on Mathematics and Statistics},
+  volume={3},
+  number={1},
+  pages={1--174},
+  year={2010},
+  publisher={Morgan \& Claypool}
+}
+
+
+@article{mccracken2001multi,
+  title={A multi-national, multi-institutional study of assessment of programming skills of first-year CS students},
+  author={McCracken, Michael and Almstrum, Vicki and Diaz, Danny and Guzdial, Mark and Hagan, Dianne and Kolikant, Yifat Ben-David and Laxer, Cary and Thomas, Lynda and Utting, Ian and Wilusz, Tadeusz},
+  journal={ACM SIGCSE Bulletin},
+  volume={33},
+  number={4},
+  pages={125--180},
+  year={2001},
+  publisher={ACM}
+}
+
+@book{kaplan1999resampling,
+  title={Resampling Stats in MATLAB},
+  author={Kaplan, Daniel T},
+  publisher={Arlington: Resampling Stats},
+  year={1999}
+}
+
+@article{tukey1962future,
+  title={The future of data analysis},
+  author={Tukey, John W},
+  journal={The annals of mathematical statistics},
+  volume={33},
+  number={1},
+  pages={1--67},
+  year={1962},
+  publisher={JSTOR},
+  url={http://projecteuclid.org/euclid.aoms/1177704711}
+}
+
+@inproceedings{donoho201550,
+  title={50 years of Data Science},
+  author={Donoho, David},
+  booktitle={Princeton {NJ}, Tukey Centennial Workshop},
+  year={2015},
+  url={http://courses.csail.mit.edu/18.337/2015/docs/50YearsDataScience.pdf}
+}
+
+@article{breiman2001statistical,
+  title={Statistical modeling: The two cultures (with comments and a rejoinder by the author)},
+  author={Breiman, Leo},
+  journal={Statistical science},
+  volume={16},
+  number={3},
+  pages={199--231},
+  year={2001},
+  publisher={Institute of Mathematical Statistics},
+  url={https://projecteuclid.org/euclid.ss/1009213726}
+}
+
+@article{wilson2014best,
+  title={Best practices for scientific computing},
+  author={Wilson, Greg and Aruliah, DA and Brown, C Titus and Hong, Neil P Chue
+      and Davis, Matt and Guy, Richard T and Haddock, Steven HD and Huff,
+      Kathryn D and Mitchell, Ian M and Plumbley, Mark D and others},
+  journal={PLoS Biol},
+  volume={12},
+  number={1},
+  pages={e1001745},
+  year={2014},
+  publisher={Public Library of Science},
+  doi = {10.1371/journal.pbio.1001745}
+}
+
+@article{wilson2017good,
+  title={Good enough practices in scientific computing},
+  author={Wilson, Greg and Bryan, Jennifer and Cranston, Karen and Kitzes, Justin and Nederbragt, Lex and Teal, Tracy K},
+  journal={PLoS computational biology},
+  volume={13},
+  number={6},
+  pages={e1005510},
+  year={2017},
+  publisher={Public Library of Science}
+}
+
+@article{cleveland2001data,
+  title={Data science: an action plan for expanding the technical areas of the field of statistics},
+  author={Cleveland, William S},
+  journal={International statistical review},
+  volume={69},
+  number={1},
+  pages={21--26},
+  year={2001},
+  publisher={Wiley Online Library}
+}
+
+@misc{wu1997datascience,
+  author={Wu, Chien-Fu Jeff},
+  title = {Statistics = Data Science?},
+  howpublished =
+  {\url{http://www2.isye.gatech.edu/~jeffwu/presentations/datascience.pdf}},
+  note = {Accessed: 2018-04-20}
+}
+
+@article{kandel2012enterprise,
+  title={Enterprise data analysis and visualization: An interview study},
+  author={Kandel, Sean and Paepcke, Andreas and Hellerstein, Joseph M and Heer, Jeffrey},
+  journal={IEEE Transactions on Visualization and Computer Graphics},
+  volume={18},
+  number={12},
+  pages={2917--2926},
+  year={2012},
+  publisher={IEEE}
+}
+
+@book{patil2011buildingbook,
+  title={Building data science teams},
+  author={Patil, DJ},
+  year={2011},
+  publisher={"O'Reilly Media, Inc."}
+}
+
+@misc{patil2011building,
+  title={Building data science teams},
+  author={Patil, DJ},
+  year={2011},
+  howbpublished={\url{http://radar.oreilly.com/2011/09/building-data-science-teams.html}},
+  publisher={"O'Reilly Media, Inc."}
+}
+
+@article{davenport2012data,
+  title={Data scientist: the sexiest job of the 21st century},
+  author={Davenport, Thomas H and Patil, DJ},
+  journal={Harvard business review},
+  volume={90},
+  number={10},
+  pages={70--76},
+  year={2012},
+  url={https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century}
+}
+
+@misc{mooresloandse,
+  title = {Moore-Sloan Data Science Environments},
+  howpublished =
+  {\url{http://msdse.org/about}},
+  note = {Accessed: 2018-06-12}
+}
+
+@misc{data8policies,
+  title = {Data8 policies},
+  howpublished =
+  {\url{http://data8.org/su18/policies.html}},
+  note = {Accessed: 2018-06-12}
+}
+
+@misc{mooresloan2017report,
+  title = {Creating institutional change in data science},
+  author = {The {M}oore-{S}loan Data Science Environments},
+  year = {2017},
+  howpublished =
+  {\url{http://data8.org/su18/policies.html}},
+  note = {Accessed: 2018-06-12}
+}
+
+@BOOK{natacad2018ds,
+  author    = "National Academies of Sciences, Engineering, and Medicine",
+  title     = "Data Science for Undergraduates: Opportunities and Options",
+  isbn      = "978-0-309-47559-4",
+  doi       = "10.17226/25104",
+  abstract  = "Data science is emerging as a field that is revolutionizing science and industries alike. Work across nearly all domains is becoming more data driven, affecting both the jobs that are available and the skills that are required. As more data and ways of analyzing them become available, more aspects of the economy, society, and daily life will become dependent on data. It is imperative that educators, administrators, and students begin today to consider how to best prepare for and keep pace with this data-driven era of tomorrow. Undergraduate teaching, in particular, offers a critical link in offering more data science exposure to students and expanding the supply of data science talent.\n\nData Science for Undergraduates: Opportunities and Options offers a vision for the emerging discipline of data science at the undergraduate level. This report outlines some considerations and approaches for academic institutions and others in the broader data science communities to help guide the ongoing transformation of this field.",
+  url       = "https://www.nap.edu/catalog/25104/data-science-for-undergraduates-opportunities-and-options",
+  year      = 2018,
+  publisher = "The National Academies Press",
+  address   = "Washington, DC"
+}
+
+@misc{nsfstats2014ppt,
+  author = {The National Science Foundation},
+  title = {Data Science at NSF: Draft Report of StatSNSF committee},
+  year = {2014},
+  howpublished =
+  {\url{www.nsf.gov/attachments/130849/public/Stodden-StatsNSF.pdf}},
+  note = {Accessed: 2018-06-12},
+  abstract = {the science of planning for, acquisition, management, analysis
+      of, and inference from data}
+}
+
+@article{de2017curriculum,
+  title={Curriculum guidelines for undergraduate programs in data science},
+  author={De Veaux, Richard D and Agarwal, Mahesh and Averett, Maia and Baumer, Benjamin S and Bray, Andrew and Bressoud, Thomas C and Bryant, Lance and Cheng, Lei Z and Francis, Amanda and Gould, Robert and others},
+  journal={Annual Review of Statistics and Its Application},
+  volume={4},
+  pages={15--30},
+  year={2017},
+  publisher={Annual Reviews}
+}
+
+@book{tukey1977exploratory,
+  title={Exploratory data analysis},
+  author={Tukey, John W},
+  year={1977},
+  publisher =    pub-AW,
+  address =      pub-AW:adr,
+  ISBN =         "0-201-07616-0",
+  ISBN-13 =      "978-0-201-07616-5",
+  LCCN =         "HA29 .T916 1977",
+  MRclass =      "62-07 (62-01; 92-01)",
+  bibdate =      "Tue Jun 01 15:28:00 1999",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/authors/t/tukey-john-w.bib",
+  ZMnumber =     "0409.62003",
+  acknowledgement = ack-nhfb,
+  ASnumber =     "307",
+  PMnumber =     "223",
+  subjects =     "Behavioural Science; Data Analysis; Elementary
+                 Textbook; Heuristic Approach; Order Statistics;
+                 Empirical Distributions; Time Series",
+}
+
+@article{grimshaw2015authentic,
+    author = {Scott D. Grimshaw},
+    title = {A Framework for Infusing Authentic Data Experiences Within
+        Statistics Courses},
+    journal = {The American Statistician},
+    volume = {69},
+    number = {4},
+    pages = {307-314},
+    year  = {2015},
+    publisher = {Taylor \& Francis},
+    doi = {10.1080/00031305.2015.1081106},
+    URL = {https://doi.org/10.1080/00031305.2015.1081106},
+    eprint = {https://doi.org/10.1080/00031305.2015.1081106}
+}
+
+@article{millman2018rcsds,
+  title={{T}eaching computational reproducibility for neuroimaging},
+  author={K. Jarrod Millman and Matthew Brett and Ross Barnowski and
+      Jean-Baptiste Poline},
+  journal={Frontiers in Neuroscience},
+  year={2018},
+  keywords = {article, computing},
+  local-content = {articles/millman2018.pdf},
+}
+
+@misc{burningglass2017,
+  title={The Quant Crunch: How the demand for data science skills is disrupting the job market},
+  author={Will Markow and Soumya Braganza and Bledi Taska and Steven M. Miller
+      and Debbie Hughues},
+  year={2017},
+  publisher={Burning Glass Technologies, Boston, Massachusetts},
+  howpublished =
+  {\url{https://public.dhe.ibm.com/common/ssi/ecm/im/en/iml14576usen/analytics-analytics-platform-im-analyst-paper-or-report-iml14576usen-20171229.pdf}}
+}
+
+@misc{techpartnership2014,
+  author = {SAS and The Tech Partnership},
+  title = {Big data analytics: assessment of demand for labour and skills
+      2013–2020},
+  year = {2014},
+  howpublished =
+  {\url{http://www.e-skills.com/Com/Research/BigData_report_Nov14.pdf}},
+  note = {Accessed: 2018-06-16}
+}
+
+@article{hardin2015data,
+  title={Data science in statistics curricula: Preparing students to “think with data”},
+  author={Hardin, Johanna and Hoerl, Roger and Horton, Nicholas J and Nolan, Deborah and Baumer, Ben and Hall-Holt, Olaf and Murrell, Paul and Peng, Roger and Roback, Paul and Temple Lang, D and others},
+  journal={The American Statistician},
+  volume={69},
+  number={4},
+  pages={343--353},
+  year={2015},
+  publisher={Taylor \& Francis}
+}
+
+@misc{mason2015state,
+  title={State of the Nation: A review of evidence on the supply and demand of quantitative skills},
+  author={Mason, Geoff and Nathan, Max and Rosso, Anna},
+  year={2015},
+  publisher={British Academy \& NIESR}
+}
+
+@inproceedings{ba2012counts,
+  title={Society Counts, Quantitative Skills in the Social Sciences and Humanities},
+  author={British Academy},
+  year={2012},
+  organization={British Academy London}
+}
+
+@misc{madigan2014statistics,
+  title={Statistics and science: a report of the London workshop on the future
+      of the statistical sciences},
+  author={David Madigan and Peter Bartlett and Peter Bühlmann and Raymond
+      Carroll and Susan Murphy and Gareth Roberts and Marian Scott and Simon
+          Távare and Chris Triggs and Jane-Ling Wang and Ronald L. Wasserstein
+          and Khangelani Zuma},
+  year={2014},
+  howpublished =
+  {\url{http://www.worldofstatistics.org/wos/pdfs/Statistics&Science-TheLondonWorkshopReport.pdf}},
+}
+
+@book{wardrop1994statistics,
+  title={Statistics: Learning in the presence of variation},
+  author={Wardrop, Robert L},
+  year={1994},
+  publisher={WCB/McGraw-Hill}
+}
+
+@article{shasha2010statistics,
+  title={Statistics is easy!},
+  author={Shasha, Dennis and Wilson, Manda},
+  journal={Synthesis Lectures on Mathematics and Statistics},
+  volume={3},
+  number={1},
+  pages={1--174},
+  year={2010},
+  publisher={Morgan \& Claypool Publishers}
+}
+
+@book{downey2014think,
+  title={Think stats: exploratory data analysis},
+  author={Downey, Allen B},
+  year={2014},
+  publisher={" O'Reilly Media, Inc."}
+}
+
+@book{bruce2014introductory,
+  title={Introductory statistics and analytics: a resampling perspective},
+  author={Bruce, Peter C},
+  year={2014},
+  publisher={John Wiley \& Sons}
+}
+
+@article{park2018practical,
+  title={Practical Teaching Strategies for Hypothesis Testing},
+  author={Park, Ryoungsun},
+  journal={The American Statistician},
+  number={just-accepted},
+  year={2018},
+  publisher={Taylor \& Francis}
+}
+
+@article{garfield1988difficulties,
+  title={Difficulties in learning basic concepts in probability and statistics: Implications for research},
+  author={Garfield, Joan and Ahlgren, Andrew},
+  journal={Journal for research in Mathematics Education},
+  pages={44--63},
+  year={1988},
+  publisher={JSTOR}
+}
+
+@inproceedings{seppala2015rainfall,
+  title={Do we know how difficult the rainfall problem is?},
+  author={Sepp{\"a}l{\"a}, Otto and Ihantola, Petri and Isohanni, Essi and Sorva, Juha and Vihavainen, Arto},
+  booktitle={Proceedings of the 15th Koli Calling Conference on Computing Education Research},
+  pages={87--96},
+  year={2015},
+  organization={ACM}
+}
+
+@article{olshen2001conversation,
+  title={A conversation with Leo Breiman},
+  author={Olshen, Richard and Breiman, Leo},
+  journal={Statistical Science},
+  pages={184--198},
+  year={2001},
+  publisher={JSTOR}
+}
+
+@misc{anderson2008theory_death,
+  author={Chris Anderson},
+  title={The end of theory: The data deluge makes the scientific method
+      obsolete},
+  year={2008},
+  howpublished =
+  {\url{http://www.wired.com/science/discoveries/magazine/16-07/pb_theory}},
+  publisher={Wired Magazine}
+}
+
+@article{chambers1999computing,
+  title={Computing with data: Concepts and challenges},
+  author={Chambers, John},
+  journal={The American Statistician},
+  volume={53},
+  number={1},
+  pages={73--84},
+  year={1999},
+  publisher={Taylor \& Francis},
+  url={http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.419.1750}
+}
+
+@article{hoaglin2003tukey,
+  title={John W. Tukey and data analysis},
+  author={Hoaglin, David C},
+  journal={Statistical Science},
+  pages={311--318},
+  year={2003},
+  publisher={JSTOR}
+}
+
+@book{oneil2013doing,
+  title={Doing data science: Straight talk from the frontline},
+  author={O'Neil, Cathy and Schutt, Rachel},
+  year={2013},
+  publisher={{O'Reilly Media, Inc}}
+}
+
+@misc{adhikari2018computational,
+  author={Ani Adhikari and John DeNero},
+  title={Computational and inferential thinking},
+  year={2018},
+  howpublished = {\url{https://www.inferentialthinking.com}},
+  publisher={Github pages}
+}
+
+@misc{press2013history,
+  author={Gil Press},
+  title={A Very Short History Of Data Science},
+  year={2013},
+  howpublished={\url{https://www.forbes.com/sites/gilpress/2013/05/28/a-very-short-history-of-data-science}},
+  publisher={Forbes},
+  url={https://www.forbes.com/sites/gilpress/2013/05/28/a-very-short-history-of-data-science}
+}
+
+@misc{loukides2010what_is,
+  author={Mike Loukides},
+  year={2010},
+  title={What is data science?},
+  howpublished={\url{https://www.oreilly.com/ideas/what-is-data-science}},
+}
+
+@article{ioannidis2005most,
+  title={Why most published research findings are false},
+  author={Ioannidis, John PA},
+  journal={PLoS medicine},
+  volume={2},
+  number={8},
+  pages={e124},
+  year={2005},
+  publisher={Public Library of Science},
+  doi = {10.1371/journal.pmed.0020124},
+  url = {http://dx.doi.org/10.1371/journal.pmed.0020124}
+}
+
+@article{donoho2009reproducible,
+  title={Reproducible research in computational harmonic analysis},
+  author={Donoho, David L and Maleki, Arian and Rahman, Inam Ur and Shahram, Morteza and Stodden, Victoria},
+  journal={Computing in Science \& Engineering},
+  volume={11},
+  number={1},
+  pages={8--18},
+  year={2009},
+  publisher={AIP Publishing},
+  url = {http://stanford.edu/~vcs/papers/RRCiSE-STODDEN2009.pdf}
+}
+
+@article{donoho2010invitation,
+  title={An invitation to reproducible computational research},
+  author={Donoho, David L},
+  journal={Biostatistics},
+  volume={11},
+  number={3},
+  pages={385--388},
+  year={2010},
+  publisher={Oxford University Press}
+}
+
+@article{ioannidis2011false,
+  title={The false-positive to false-negative ratio in epidemiologic studies},
+  author={Ioannidis, John PA and Tarone, Robert and McLaughlin, Joseph K},
+  journal={Epidemiology},
+  pages={450--456},
+  year={2011},
+  publisher={JSTOR},
+  url={https://www.jstor.org/stable/pdf/23047674.pdf}
+}
+
+@article{begley2012drug,
+  title={Drug development: Raise standards for preclinical cancer research},
+  author={Begley, C Glenn and Ellis, Lee M},
+  journal={Nature},
+  volume={483},
+  number={7391},
+  pages={531},
+  year={2012},
+  publisher={Nature Publishing Group}
+}
+
+@book{oneil2016weapons,
+  title={Weapons of math destruction: How big data increases inequality and threatens democracy},
+  author={O'Neil, Cathy},
+  year={2016},
+  publisher={Crown Publishing Group},
+  address   = {"New York"},
+}
+
+@incollection{buckheit1995wavelab,
+  title={Wavelab and reproducible research},
+  author={Buckheit, Jonathan B and Donoho, David L},
+  booktitle={Wavelets and statistics},
+  pages={55--81},
+  year={1995},
+  publisher={Springer}
+}
+
+@article{chambers1998programming,
+  title={Programming with Data: A Guide to the S Language},
+  author={Chambers, John M},
+  year={1998},
+  publisher={Springer-Verlag}
+}
+
+@article{basili2008understanding,
+  title={Understanding the high-performance-computing community: A
+      software engineer's perspective},
+  author={Basili, Victor R and Carver, Jeffrey C and Cruzes, Daniela
+      and Hochstein, Lorin M and Hollingsworth, Jeffrey K and Shull,
+      Forrest and Zelkowitz, Marvin V},
+  journal={IEEE software},
+  volume={25},
+  number={4},
+  pages={29},
+  year={2008},
+  publisher={IEEE Computer Society}
+}
+
+@misc{brett2019dsfe_what,
+  author={Matthew Brett},
+  title={What is data science?},
+  year={2019},
+  howpublished = {\url{https://matthew-brett.github.io/dsfe/chapters/01/what-is-data-science}},
+  publisher={Github pages}
+}
+
+@Article{virtanen2020,
+  author={Virtanen, Pauli
+          and Gommers, Ralf
+          and Oliphant, Travis E.
+          and Haberland, Matt
+          and Reddy, Tyler
+          and Cournapeau, David
+          and Burovski, Evgeni
+          and Peterson, Pearu
+          and Weckesser, Warren
+          and Bright, Jonathan
+          and van der Walt, St{\'e}fan J.
+          and Brett, Matthew
+          and Wilson, Joshua
+          and Millman, K. Jarrod
+          and Mayorov, Nikolay
+          and Nelson, Andrew R. J.
+          and Jones, Eric
+          and Kern, Robert
+          and Larson, Eric
+          and Carey, C. J.
+          and Polat, Ilhan
+          and Feng, Yu
+          and Moore, Eric W.
+          and VanderPlas, Jake
+          and Laxalde, Denis
+          and Perktold, Josef
+          and Cimrman, Robert
+          and Henriksen, Ian
+          and Quintero, E. A.
+          and Harris, Charles R.
+          and Archibald, Anne M.
+          and Ribeiro, Ant{\^o}nio H.
+          and Pedregosa, Fabian
+          and van Mulbregt, Paul
+          and Vijaykumar, Aditya
+          and Bardelli, Alessandro Pietro
+          and Rothberg, Alex
+          and Hilboll, Andreas
+          and Kloeckner, Andreas
+          and Scopatz, Anthony
+          and Lee, Antony
+          and Rokem, Ariel
+          and Woods, C. Nathan
+          and Fulton, Chad
+          and Masson, Charles
+          and H{\"a}ggstr{\"o}m, Christian
+          and Fitzgerald, Clark
+          and Nicholson, David A.
+          and Hagen, David R.
+          and Pasechnik, Dmitrii V.
+          and Olivetti, Emanuele
+          and Martin, Eric
+          and Wieser, Eric
+          and Silva, Fabrice
+          and Lenders, Felix
+          and Wilhelm, Florian
+          and Young, G.
+          and Price, Gavin A.
+          and Ingold, Gert-Ludwig
+          and Allen, Gregory E.
+          and Lee, Gregory R.
+          and Audren, Herv{\'e}
+          and Probst, Irvin
+          and Dietrich, J{\"o}rg P.
+          and Silterra, Jacob
+          and Webber, James T.
+          and Slavic, Janko
+          and Nothman, Joel
+          and Buchner, Johannes
+          and Kulick, Johannes
+          and Sch{\"o}nberger, Johannes L.
+          and de Miranda Cardoso, Jos{\'e} Vin{\'i}cius
+          and Reimer, Joscha
+          and Harrington, Joseph
+          and Rodr{\'i}guez, Juan Luis Cano
+          and Nunez-Iglesias, Juan
+          and Kuczynski, Justin
+          and Tritz, Kevin
+          and Thoma, Martin
+          and Newville, Matthew
+          and K{\"u}mmerer, Matthias
+          and Bolingbroke, Maximilian
+          and Tartre, Michael
+          and Pak, Mikhail
+          and Smith, Nathaniel J.
+          and Nowaczyk, Nikolai
+          and Shebanov, Nikolay
+          and Pavlyk, Oleksandr
+          and Brodtkorb, Per A.
+          and Lee, Perry
+          and McGibbon, Robert T.
+          and Feldbauer, Roman
+          and Lewis, Sam
+          and Tygier, Sam
+          and Sievert, Scott
+          and Vigna, Sebastiano
+          and Peterson, Stefan
+          and More, Surhud
+          and Pudlik, Tadeusz
+          and Oshima, Takuya
+          and Pingel, Thomas J.
+          and Robitaille, Thomas P.
+          and Spura, Thomas
+          and Jones, Thouis R.
+          and Cera, Tim
+          and Leslie, Tim
+          and Zito, Tiziano
+          and Krauss, Tom
+          and Upadhyay, Utkarsh
+          and Halchenko, Yaroslav O.
+          and V{\'a}zquez-Baeza, Yoshiki
+          and Contributors, SciPy 1. 0.},
+  title={SciPy 1.0: fundamental algorithms for scientific computing in Python},
+  journal={Nature Methods},
+  year={2020},
+  abstract={SciPy is an open-source scientific computing library for the Python
+      programming language. Since its initial release in 2001, SciPy has become
+      a de facto standard for leveraging scientific algorithms in Python,
+      with over 600 unique code contributors, thousands of dependent packages,
+      over 100,000 dependent repositories and millions of downloads per year.
+      In this work, we provide an overview of the capabilities and development
+      practices of SciPy 1.0 and highlight some recent technical
+      developments.},
+  issn={1548-7105},
+  doi={10.1038/s41592-019-0686-2},
+  url={https://doi.org/10.1038/s41592-019-0686-2},
+  keywords = {article, computing}
+}
