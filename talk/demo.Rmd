@@ -1,0 +1,103 @@
+---
+jupyter:
+  jupytext:
+    notebook_metadata_filter: all,-language_info
+    split_at_heading: true
+    text_representation:
+      extension: .Rmd
+      format_name: rmarkdown
+      format_version: '1.2'
+      jupytext_version: 1.6.0
+  kernelspec:
+    display_name: Python 3
+    language: python
+    name: python3
+---
+
+When loading an image, NiBabel tries to figure out the image format from the filename. An image in a known format can easily be loaded by simply passing its filename to the load function.
+
+```{python}
+import numpy as np
+
+import nibabel as nib
+
+img = nib.load('example4d.nii.gz')
+img
+```
+
+A NiBabel image knows about its shape:
+
+```{python}
+img.shape
+```
+
+It also records the data type of the data as stored on disk. In this case the data on disk are 16 bit signed integers:
+
+```{python}
+img.get_data_dtype() == np.dtype(np.int16)
+```
+
+The image has an affine transformation that determines the world-coordinates of
+the image elements (see Coordinate systems and affines):
+
+```{python}
+img.affine.shape
+```
+
+This information is available without the need to load anything of the main image data into the memory. Of course there is also access to the image data as a NumPy array
+
+```{python}
+data = img.get_fdata()
+data.shape
+```
+
+```{python}
+type(data)
+```
+
+The complete information embedded in an image header is available via a format-specific header object.
+
+```{python}
+hdr = img.header
+print(hdr)
+```
+
+In case of this NIfTI file it allows accessing all NIfTI-specific information, e.g.
+
+```{python}
+hdr.get_xyzt_units()
+```
+
+Corresponding “setter” methods allow modifying a header, while ensuring its compliance with the file format specifications.
+
+In some situations we need even more flexibility and, for those with great courage, NiBabel also offers access to the raw header information
+
+```{python}
+raw = hdr.structarr
+raw['xyzt_units']
+```
+
+This lowest level of the API is designed for people who know the file format
+well enough to work with its internal data, and comes without any safety-net.
+
+Creating a new image in some file format is also easy. At a minimum it only needs some image data and an image coordinate transformation (affine):
+
+```{python}
+data = np.ones((32, 32, 15, 100), dtype=np.int16)
+img = nib.Nifti1Image(data, np.eye(4))
+img.get_data_dtype() == np.dtype(np.int16)
+```
+
+```{python}
+img.header.get_xyzt_units()
+```
+
+In this case, we used the identity matrix as the affine transformation. The
+image header is initialized from the provided data array (i.e. shape, dtype)
+and all other values are set to reasonable defaults.
+
+Saving this new image to a file is trivial:
+
+```{python}
+nib.save(img, 'test4d.nii.gz')
+```

@@ -10,6 +10,14 @@ suppress-bibliography: true
 <#endif>
 ---
 
+# Grant team
+
+Matthew Brett (Nibabel developer)
+
+Chris Markiewicz (Nibabel lead maintainer)
+
+Oscar Esteban (developer of Nitransforms tool)
+
 # Democratizing brain imaging through code
 
 We want to build a culture in which it is ordinary for scientists to contribute
@@ -43,6 +51,10 @@ possible foundation in education.
 
 Richard Feynman - [found on his blackboard after his
 death](https://qph.fs.quoracdn.net/main-qimg-87833c78a604ff07a82ff7787574e197-c)
+
+# Code as explanation
+
+<https://nipy.org/nibabel/image_orientation.html>
 
 # Software for understanding
 
@@ -79,6 +91,8 @@ img = nib.load('my_image.nii.gz')
 # Read data from disk as an array
 data = img.get_fdata()
 ```
+
+If time, a notebook.
 
 # Making code ordinary in teaching
 
